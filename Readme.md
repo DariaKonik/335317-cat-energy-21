@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Дарья Коник](https://up.htmlacademy.ru/adaptive/21/user/335317).
-* Наставник: `Неизвестно`.
+* Наставник: Анастасия Корбут.
 
 ---
 
