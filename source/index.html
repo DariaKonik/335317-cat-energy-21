@@ -5,7 +5,7 @@
     <title>HTML Academy: Кэт энерджи</title>
   </head>
   <body>
-    <header class="page__header page-header">
+    <header class="page-header">
       <a class="page-header__logo-image" href="#">
         <img src="https://via.placeholder.com/34x38" width="34" height="38" alt="графический логотип Cat Energy">
       </a>
@@ -14,22 +14,20 @@
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list">
-            <li class="main-nav__item">
-              <a class="main-nav__link">Главная</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="form.html">Подбор программы</a>
-            </li>
-          </ul>
-        </div>
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__link">Главная</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="form.html">Подбор программы</a>
+          </li>
+        </ul>
       </nav>
     </header>
-    <main class="page__main">
+    <main class="page-main">
       <h1 class="visually-hidden">Cat Energy — функциональное питание для котов</h1>
       <section class="promo">
         <div class="promo__wrapper">
@@ -47,12 +45,12 @@
           <article class="goods__section">
             <h3>Похудение</h3>
             <p>Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-            <a class="goods__catalog-link" href="#">Каталог slim</a>
+            <a class="goods__link" href="#">Каталог slim</a>
           </article>
           <article class="goods__section">
             <h3>Набор массы</h3>
             <p>Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-            <a class="goods__catalog-link" href="#">Каталог pro</a>
+            <a class="goods__link" href="#">Каталог pro</a>
           </article>
         </div>
       </section>
@@ -67,7 +65,7 @@
           </ul>
         </div>
       </section>
-      <article class="results">
+      <section class="results">
         <div class="results__wrapper">
           <h2 class="visully-hidden">Результат замены обычного корма на корм Cat Energy Slim </h2>
           <h3>Живой пример</h3>
@@ -82,7 +80,7 @@
               <dd class="results__description">затрачено времени</dd>
             </div>
           </dl>
-          <p class="results__legend">Затраты на питание: 15 000 РУБ.</p>
+          <p class="results__legend">Затраты на питание: <span class="results__cost">15 000 РУБ.</span></p>
           <div class="results__slider">
             <img class="results__image results__image--fat-cat" src="https://via.placeholder.com/311x232" width="311" height="232" alt="Толстый кот до замены корма на Cat Energy Slim">
             <img class="results__image results__image--slim-cat" src="https://via.placeholder.com/311x232" width="311" height="232" alt="Тонкий кот после замены корма на Cat Energy Slim">
@@ -95,9 +93,9 @@
             </div>
           </div>
         </div>
-      </article>
+      </section>
     </main>
-    <footer class="page__footer page-footer">
+    <footer class="page-footer">
       <section class="page-footer__top-section">
       <h2 class="visually-hidden">Адрес офиса</h2>
         <div class="page-footer__contacts contacts">
@@ -111,7 +109,7 @@
         <img class="page-footer__logo-text" src="https://via.placeholder.com/128x24" width="128" height="24" alt="Cat Energy">
         <ul class="page-footer__social social">
           <li class="social__item">
-            <a class="social__link sicial__link--vkontakte" href="#" aria-label="страница Cat Energy во Вконтакте" target="_blank">
+            <a class="social__link social__link--vkontakte" href="#" aria-label="страница Cat Energy во Вконтакте" target="_blank">
               <img class="social__icon" src="https://via.placeholder.com/23x16" alt="логотип Вконтакте" aria-hidden="true" width="23" height="16">
             </a>
           </li>
