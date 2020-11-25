@@ -1,0 +1,17 @@
+.goods__wrapper {
+  @include section-margins;
+  margin-bottom: 15px;
+}
+
+.goods__section {
+  background-color: $frames-background;
+}
+
+.goods__link {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  font-family: "Oswald", "Arial", sans-serif;
+  color: $basic-black;
+  text-transform: uppercase;
+}

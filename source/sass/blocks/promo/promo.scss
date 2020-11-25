@@ -1,0 +1,28 @@
+.promo__wrapper {
+  margin-bottom: 10px;
+  padding: $min-page-padding;
+}
+
+.promo {
+  padding-top: 27px;
+  background: linear-gradient(0deg, $background-green, $background-green), url("../img/index-background-desktop-1.jpg");
+  background-repeat: no-repeat, no-repeat;
+}
+
+.promo h2 {
+  color: $basic-white;
+}
+
+.promo__slogan {
+  line-height: 14px;
+  font-family: "Oswald", "Arial", sans-serif;
+  color: $basic-white;
+  text-transform: uppercase;
+}
+
+.promo__button {
+  font-family: "Oswald", "Arial", sans-serif;
+  color: $basic-white;
+  text-transform: uppercase;
+  background-color: $button-green;
+}

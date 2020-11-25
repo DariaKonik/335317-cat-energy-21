@@ -1,0 +1,8 @@
+.features__wrapper {
+  @include section-margins;
+  margin-bottom: 42px;
+}
+
+.features__list {
+  list-style: none;
+}
