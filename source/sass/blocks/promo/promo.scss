@@ -9,18 +9,16 @@
   background-repeat: no-repeat, no-repeat;
 }
 
-.promo__header {
-  color: $basic-white;
-}
-
 .promo__title {
   line-height: 36px;
+  color: $basic-white;
 }
 
 .promo__slogan {
   line-height: 14px;
   font-family: "Oswald", "Arial", sans-serif;
   text-transform: uppercase;
+  color: $basic-white;
 }
 
 .promo__button {
