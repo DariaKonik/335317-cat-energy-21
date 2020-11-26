@@ -1,0 +1,14 @@
+.catalog__list {
+  @include list-style-blocks;
+}
+
+.catalog__item {
+  padding-top: 26px;
+  padding-bottom: 25px;
+}
+
+.catalog__button {
+  font-size: 16px;
+  font-family: "Oswald", "Arial", sans-serif;
+  text-transform: uppercase;
+}
