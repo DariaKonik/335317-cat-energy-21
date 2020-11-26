@@ -1,0 +1,32 @@
+.page-body {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  font-family: "Arial", sans-serif;
+  color: $text-main-color;
+  background-color: $basic-white;
+}
+
+.first-level-title,
+.second-level-title,
+.third-level-title {
+  font-weight: 400;
+  font-family: "Oswald", "Arial", sans-serif;
+  color: $basic-black;
+}
+
+.first-level-title {
+  font-size: 36px;
+  line-height: 36px;
+}
+
+.second-level-title {
+  font-size: 36px;
+  line-height: 40px;
+}
+
+.third-level-title {
+  font-size: 24px;
+  line-height: 37px;
+  text-transform: uppercase;
+}

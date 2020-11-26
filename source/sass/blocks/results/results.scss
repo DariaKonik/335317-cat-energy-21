@@ -1,0 +1,21 @@
+.results__wrapper {
+  padding: $min-page-padding;
+  padding-top: 27px;
+  padding-botton: 25px;
+}
+
+.results__number {
+  font-size: 24px;
+  line-height: 24px;
+  font-family: "Oswald", "Arial", sans-serif;
+  color: $basic-black;
+  text-transform: uppercase;
+}
+
+.results__legend {
+  font-size: 14px;
+  line-height: 20px;
+  font-family: "Oswald", "Arial", sans-serif;
+  color: $basic-black;
+  text-transform: uppercase;
+}
