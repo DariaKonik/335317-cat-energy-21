@@ -5,3 +5,9 @@ $min-page-margin-top: 12px;
   padding: $min-page-padding;
   margin-top: $min-page-margin-top;
 }
+
+@mixin list-style-blocks {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}

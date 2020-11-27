@@ -35,42 +35,42 @@
         <fieldset class="program-form__item">
           <ul class="program-form__list">
             <li class="program-form__option">
-              <label class="program-form__label" for="name">Имя:*</label>
-              <input class="programm-form__input programm-form__input--name" id="name" type="text" name="name" placeholder="Барсик" required>
+              <label class="program-form__label program-form__label--filter-label" for="name">Имя:*</label>
+              <input class="program-form__input program-form__input--name" id="name" type="text" name="name" placeholder="Барсик" required>
             </li>
             <li class="program-form__option">
-              <label class="program-form__label" for="weight">Вес (кг):*</label>
-              <input class="programm-form__input programm-form__input--weight" id="weight" type="number" name="weight" placeholder="7" required>
+              <label class="program-form__label program-form__label--filter-label" for="weight">Вес (кг):*</label>
+              <input class="program-form__input program-form__input--weight" id="weight" type="number" name="weight" placeholder="7" required>
             </li>
             <li class="program-form__option">
-              <label class="program-form__label" for="age">Возраст (лет):</label>
-              <input class="programm-form__input programm-form__input--age" id="age" type="number" name="age" placeholder="7">
+              <label class="program-form__label program-form__label--filter-label" for="age">Возраст (лет):</label>
+              <input class="program-form__input program-form__input--age" id="age" type="number" name="age" placeholder="7">
             </li>
           </ul>
           <ul class="program-form__list program-filter-list">
             <li class="program-form__option">
               <input class="program-form__input-radio" id="slimming" type="radio" name="program-filter" value="slimming" checked>
-              <label class="program-form__label" for="slimming">Похудение</label>
+              <label class="program-form__label program-form__label-radio" for="slimming">Похудение</label>
             </li>
             <li class="program-form__option">
               <input class="program-form__input-radio" id="weight-gain" type="radio" name="program-filter" value="weight-gain">
-              <label class="program-form__label" for="weight-gain">Набор массы</label>
+              <label class="program-form__label program-form__label-radio" for="weight-gain">Набор массы</label>
             </li>
             <li class="program-form__option">
               <input class="program-form__input-radio" id="undefined-filter" type="radio" name="program-filter" value="undefined-filter">
-              <label class="program-form__label" for="undefined-filter">Не знаю (Нужен ваш совет)</label>
+              <label class="program-form__label program-form__label-radio" for="undefined-filter">Не знаю (Нужен ваш совет)</label>
             </li>
           </ul>
         </fieldset>
         <fieldset class="program-form__item">
           <legend class="program-form__title section-title section-title--form-page">Контактные данные (владельца кота)</legend>
           <ul class="program-form__list">
-            <li class="programm-form__option">
-              <label for="email">E-mail:*</label>
+            <li class="program-form__option">
+              <label class="program-form__label" for="email">E-mail:*</label>
               <input class="program-form__input program-form__input--email" id="email" type="email" name="email" placeholder="kuklachev@gmail.com" required>
             </li>
-            <li class="programm-form__option">
-              <label for="phone">Телефон:*</label>
+            <li class="program-form__option">
+              <label class="program-form__label" for="phone">Телефон:*</label>
               <input class="program-form__input program-form__input--phone" id="phone" type="tel" name="phone" placeholder="8 (960) 900-60-90" required>
             </li>
           </ul>
@@ -85,19 +85,19 @@
           <ul class="program-form__list">
             <li class="program-form__option">
               <input class="program-form__input-checkbox program-form__input-checkbox--sweetener" id="sweetener" type="checkbox" name="sweetener" checked>
-              <label for="sweetener">Сахарозаменитель</label>
+              <label class="program-form__label" for="sweetener">Сахарозаменитель</label>
             </li>
             <li class="program-form__option">
               <input class="program-form__input-checkbox program-form__input-checkbox--still-water" id="still-water" type="checkbox" name="still-water">
-              <label for="still-water">Питьевая вода</label>
+              <label class="program-form__label" for="still-water">Питьевая вода</label>
             </li>
             <li class="program-form__option">
               <input class="program-form__input-checkbox program-form__input-checkbox--milk" id="milk" type="checkbox" name="milk">
-              <label for="milk">Молоко</label>
+              <label class="program-form__label" for="milk">Молоко</label>
             </li>
             <li class="program-form__option">
               <input class="program-form__input-checkbox program-form__input-checkbox--vitamins" id="vitamins" type="checkbox" name="vitamins">
-              <label for="vitamins">Витамины</label>
+              <label class="program-form__label" for="vitamins">Витамины</label>
             </li>
           </ul>
         </fieldset>
@@ -106,7 +106,7 @@
       </form>
     </main>
     <footer class="page-footer">
-      <section class="page-footer__top-section">
+      <section class="page-footer__top-section page-footer__top-section--form-page">
       <h2 class="visually-hidden">Адрес офиса</h2>
         <div class="page-footer__contacts contacts">
           <p class="contacts__title">Приглашаем к сотрудничеству дилеров!</p>
