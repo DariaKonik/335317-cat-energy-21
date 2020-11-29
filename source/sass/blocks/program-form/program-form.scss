@@ -1,0 +1,36 @@
+.program-form__item {
+  margin-bottom: 27px;
+}
+
+.program-form__list {
+  @include list-style-blocks;
+}
+
+.program-form__label,
+.program-form__input {
+  font-size: 16px;
+  line-height: 18px;
+  font-family: "Oswald", "Arial", sans-serif;
+  color: $text-main-color;
+  text-transform: uppercase;
+}
+
+.program-form__input::placeholder {
+  color: $text-main-color;
+}
+
+.program-form__label--special-color {
+  color: $extra-black;
+}
+
+.program-form__button {
+  font-size: 16px;
+  line-height: 20px;
+  font-family: "Oswald", "Arial", sans-serif;
+  color: $basic-white;
+  background-color: $button-green;
+}
+
+.program-form__legend {
+  color: $basic-black;
+}
