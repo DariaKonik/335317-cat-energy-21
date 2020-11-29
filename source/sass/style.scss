@@ -3,6 +3,8 @@
 @import "global/variables.scss";
 @import "global/global.scss";
 @import "global/visually-hidden.scss";
+@import "global/viewports.scss";
+@import "blocks/page/page.scss";
 @import "blocks/page-header/page-header.scss";
 @import "blocks/page-body/page-body.scss";
 @import "blocks/goods/goods.scss";
@@ -15,3 +17,4 @@
 @import "blocks/page-footer/page-footer.scss";
 @import "blocks/social/social.scss";
 @import "blocks/copyright/copyright.scss";
+@import "blocks/menu/menu.scss";

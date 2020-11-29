@@ -1,3 +1,42 @@
 .page-header {
+  min-height: $header-min-height;
   @include section-margins;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.page-header__logo-text,
+.page-header__logo-text {
+  outline: 5px solid rgba(255, 0, 0, 0.8);
+  outline-offset: -5px;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.page-header__logo-middle {
+  display: none;
+
+  @include tablet-only () {
+    display: block;
+  }
+}
+
+.page-header__logo-big {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+}
+
+.page-header__nav {
+  outline: 5px solid rgba(0, 0, 255, 0.8);
+  outline-offset: -5px;
 }

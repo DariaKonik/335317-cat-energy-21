@@ -1,0 +1,9 @@
+$tablet-width: 768px;
+$desktop-width: 1440px;
+$mobile-width-only: 320px;
+
+@mixin tablet-only () {
+  @media (min-width: $tablet-width) and (max-width: $desktop-width - 1) {
+    @content;
+  }
+}
