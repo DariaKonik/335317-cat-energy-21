@@ -1,5 +1,12 @@
 .contacts {
   padding: 28px 19px 22px 19px;
+  background: $basic-white;
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 95px;
+    left: 5%;
+  }
 }
 
 .contacts__title {

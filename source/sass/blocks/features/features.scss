@@ -23,6 +23,7 @@
     grid-template-columns: 1fr 1fr;
     grid-gap: 153px;
   }
+
   @media (min-width: $desktop-width) {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 94px;

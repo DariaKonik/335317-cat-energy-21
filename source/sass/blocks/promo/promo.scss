@@ -12,12 +12,14 @@
   @media (min-width: $tablet-width) {
     min-height: 850px;
     padding: $tablet-min-padding;
+    padding-top: 27px;
     background: $basic-white;
   }
 
   @media (min-width: $desktop-width) {
     min-height: 555px;
     padding: $desktop-min-padding;
+    padding-top: 27px;
     background: linear-gradient(0deg, $background-green, $background-green), url("../img/index-background-desktop-1.jpg");
     background-repeat: no-repeat, no-repeat;
   }
