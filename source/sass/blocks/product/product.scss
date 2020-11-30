@@ -1,0 +1,22 @@
+.product__title {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  font-family: "Oswald", "Arial", sans-serif;
+  color: $extra-black;
+  text-transform: uppercase;
+
+  &--extra {
+    line-height: 16px;
+  }
+}
+
+.product__features {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.product__intro {
+  font-size: 12px;
+  line-height: 16px;
+}

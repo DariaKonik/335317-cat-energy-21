@@ -1,9 +1,22 @@
 .button {
   display: inline-block;
+  font-size: 16px;
+  font-family: "Oswald", "Arial", sans-serif;
+  line-height: 24px;
   word-break: break-word;
   text-transform: uppercase;
   text-align: center;
   vertical-align: middle;
   border: none;
   cursor: pointer;
+}
+
+.button--order {
+  color: $basic-white;
+  background-color: $button-green;
+}
+
+.button--show-all {
+  color: $button-special-text-color;
+  background-color: $button-special-background;
 }
