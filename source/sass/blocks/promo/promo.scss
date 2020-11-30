@@ -11,11 +11,13 @@
 
   @media (min-width: $tablet-width) {
     min-height: 850px;
+    padding: $tablet-min-padding;
     background: $basic-white;
   }
 
   @media (min-width: $desktop-width) {
     min-height: 555px;
+    padding: $desktop-min-padding;
     background: linear-gradient(0deg, $background-green, $background-green), url("../img/index-background-desktop-1.jpg");
     background-repeat: no-repeat, no-repeat;
   }
@@ -24,6 +26,10 @@
 .promo__title {
   line-height: 36px;
   color: $basic-white;
+
+  @media (min-width: $tablet-width) {
+    color: $basic-black;
+  }
 }
 
 .promo__slogan {
@@ -31,6 +37,10 @@
   font-family: "Oswald", "Arial", sans-serif;
   color: $basic-white;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    color: $basic-black;
+  }
 }
 
 .promo__button {

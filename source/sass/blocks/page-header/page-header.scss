@@ -7,15 +7,17 @@
   align-items: center;
 
   @media (min-width: $tablet-width) {
+    padding: $tablet-min-padding;
     grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: $desktop-min-padding;
   }
 }
 
 .page-header__logo-img,
 .page-header__logo-text {
-  outline: 5px solid rgba(255, 0, 0, 0.8);
-  outline-offset: -5px;
-
   @media (min-width: $tablet-width) {
     display: none;
   }

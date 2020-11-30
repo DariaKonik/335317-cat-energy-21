@@ -1,11 +1,30 @@
 .goods__wrapper {
   @include section-margins;
   margin-bottom: 15px;
+
+  @media (min-width: $tablet-width) {
+    padding: $tablet-min-padding;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: $desktop-min-padding;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 80px;
+  }
 }
 
 .goods__article {
   min-height: 280px;
   background-color: $frames-background;
+
+  @media (min-width: $tablet-width) {
+    min-height: 372px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 374px;
+  }
 }
 
 .goods__link {
