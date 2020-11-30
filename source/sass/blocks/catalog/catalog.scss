@@ -1,0 +1,8 @@
+.catalog__list {
+  @include list-style-blocks;
+}
+
+.catalog__item {
+  padding-top: 26px;
+  padding-bottom: 25px;
+}

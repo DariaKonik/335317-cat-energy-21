@@ -11,14 +11,14 @@
 
 .first-level-title,
 .second-level-title,
-.third-level-title {
+.third-level-title, {
   font-weight: 400;
   font-family: "Oswald", "Arial", sans-serif;
   color: $basic-black;
 }
 
 .first-level-title {
-  padding: 27px;
+  padding-top: 27px;
   font-size: 36px;
   line-height: 36px;
 }
