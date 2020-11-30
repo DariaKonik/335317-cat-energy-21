@@ -6,6 +6,17 @@
   margin: 0;
   padding: 0;
   list-style: none;
+  display: block;
+
+  @media (min-width: $tablet-width) {
+    max-width: 440px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desctop-width) {
+    max-width: 478px;
+  }
 }
 
 .main-nav__link {
@@ -21,12 +32,5 @@
 .main-nav__toggle {
   @media (min-width: $tablet-width) {
     display: none;
-  }
-}
-
-.main-nav__list {
-  display: block;
-    @media (min-width: $tablet-width) {
-    display: flex;
   }
 }
