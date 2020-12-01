@@ -2,11 +2,13 @@
   min-height: 705px;
   background-color: $results-background;
 
-  @media (min-width: $tablet-width) and (max-width: $desktop-width - 1) {
+  @media (min-width: $tablet-width) {
+    padding: $tablet-min-padding;
     background: linear-gradient(to bottom, $basic-white 65%, $results-background 35%);
   }
 
   @media (min-width: $desktop-width) {
+    padding: $desktop-min-padding;
     background: linear-gradient(to bottom, $basic-white 20%, $results-background 20%);
   }
 }
