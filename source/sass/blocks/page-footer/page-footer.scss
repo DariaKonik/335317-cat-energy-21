@@ -3,12 +3,17 @@
 }
 
 .page-footer__bottom-section {
-  padding: 39px 20px 22px 19px;
+  padding: 33px 19px 16px 19px;
   background-color: $frames-background;
 
   @media (min-width: $tablet-width) {
+    padding: 65px 72px 59px 71px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 66px 89px 98px 76px;
   }
 }
 
