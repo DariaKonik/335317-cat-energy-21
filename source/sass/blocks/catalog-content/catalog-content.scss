@@ -1,5 +1,20 @@
 .catalog-content {
   padding: $min-page-padding;
+
+  @media (min-width: $tablet-width) {
+    padding: $tablet-min-padding;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: $desktop-min-padding;
+  }
+}
+
+.catalog-content__extra-gift-wrapper {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+  }
 }
 
 .catalog-content__extra-catalog {
