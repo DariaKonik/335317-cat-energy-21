@@ -1,5 +1,14 @@
 .form-content {
+  padding: $min-page-padding;
   padding-bottom: 32px;
+
+  @media (min-width: $tablet-width) {
+    padding: $tablet-min-padding;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: $desktop-min-padding;
+  }
 }
 
 .form-content__subtitle {

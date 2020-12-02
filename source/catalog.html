@@ -2,38 +2,45 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page-body">
     <header class="page-header">
-      <a class="page-header__logo-image" href="#">
+      <a class="page-header__logo-middle" href="#">
+        <img src="https://via.placeholder.com/174x52" width="174" height="52" alt="логотип Cat Energy">
+      </a>
+      <a class="page-header__logo-big" href="#">
+        <img src="https://via.placeholder.com/202x56" width="202" height="56" alt="логотип Cat Energy">
+      </a>
+      <a class="page-header__logo-img">
         <img src="https://via.placeholder.com/34x38" width="34" height="38" alt="графический логотип Cat Energy">
       </a>
-      <img class="page-header__logo-text" src="https://via.placeholder.com/101x18" width="101" height="18" alt="Cat Energy">
-      <nav class="page-header__nav main-nav">
+      <a class="page-header__logo-text">
+        <img src="https://via.placeholder.com/101x18" width="101" height="18" alt="Cat Energy">
+      </a>
+      <nav class="page-header__nav main-nav main-nav--open main-nav--closed main-nav--nojs">
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list">
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="index.html">Главная</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link">Каталог продукции</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="form.html">Подбор программы</a>
-            </li>
-          </ul>
-        </div>
+        <ul class="main-nav__list menu">
+          <li class="main-nav__item menu__item">
+            <a class="main-nav__link" href="index.html">Главная</a>
+          </li>
+          <li class="main-nav__item menu__item">
+            <a class="main-nav__link">Каталог продукции</a>
+          </li>
+          <li class="main-nav__item menu__item">
+            <a class="main-nav__link" href="form.html">Подбор программы</a>
+          </li>
+        </ul>
       </nav>
     </header>
     <main class="catalog-content">
       <h1 class="first-level-title">Каталог продукции</h1>
       <section class="catalog-content__catalog catalog">
-      <h2 class="visually-hidden">Перечень кормов Cat Energy</h2>
+        <h2 class="visually-hidden">Перечень кормов Cat Energy</h2>
         <ul class="catalog__list">
           <li class="catalog__item product">
             <a class="product__link" href="blank.html">
@@ -203,56 +210,58 @@
           </li>
         </ul>
       </section>
-      <section class="catalog-content__extra-catalog extra-catalog">
-        <h2 class="catalog-content__section-title section-title">Дополнительные товары</h2>
-        <ul class="extra-catalog__list">
-          <li class="extra-catalog__item product">
-            <h3 class="product__title product__title--extra">Сахарозаменитель</h3>
-            <table class="product__features">
-              <tr>
-                <td>1 упаковка (100 г)</td>
-                <td>200 Р.</td>
-              </tr>
-            </table>
-            <a class="button button--order" href="blank.html" aria-label="Заказать упаковку сахарозаменителя 100 грамм">Заказать</a>
-          </li>
-          <li class="extra-catalog__item product">
-            <h3 class="product__title product__title--extra">Питьевая вода</h3>
-            <table class="product__features">
-              <tr>
-                <td>5 литров</td>
-                <td>50 Р.</td>
-              </tr>
-            </table>
-            <a class="button button--order" href="blank.html" aria-label="Заказать питьевую воду 5 литров">Заказать</a>
-          </li>
-          <li class="extra-catalog__item product">
-            <h3 class="product__title product__title--extra">Молоко</h3>
-            <table class="product__features">
-              <tr>
-                <td>1 литр</td>
-                <td>100 Р.</td>
-              </tr>
-            </table>
-            <a class="button button--order" href="blank.html" aria-label="Заказать молоко 1 литр">Заказать</a>
-          </li>
-          <li class="extra-catalog__item product">
-            <h3 class="product__title product__title--extra">Витамины</h3>
-            <table class="product__features">
-              <tr>
-                <td>1 упаковка (30 г)</td>
-                <td>300 Р.</td>
-              </tr>
-            </table>
-            <a class="button button--order" href="blank.html" aria-label="Заказать упаковку витамин 30 грамм">Заказать</a>
-          </li>
-        </ul>
-      </section>
-      <section class="catalog-content__promo promo-gift">
-        <h2 class="visually-hidden">Подарок при покупке</h2>
-        <img class="promo-gift__image" src="https://via.placeholder.com/78x80" width="78" height="80" alt="иконка-изображение подарка" aria-hidden="true">
-        <p class="promo-gift__text">Закажите все и получите чехол для кота в подарок!</p>
-      </section>
+      <div class="catalog-content__extra-gift-wrapper">
+        <section class="catalog-content__extra-catalog extra-catalog">
+          <h2 class="catalog-content__section-title section-title">Дополнительные товары</h2>
+          <ul class="extra-catalog__list">
+            <li class="extra-catalog__item product">
+              <h3 class="product__title product__title--extra">Сахарозаменитель</h3>
+              <table class="product__features">
+                <tr>
+                  <td>1 упаковка (100 г)</td>
+                  <td>200 Р.</td>
+                </tr>
+              </table>
+              <a class="button button--order" href="blank.html" aria-label="Заказать упаковку сахарозаменителя 100 грамм">Заказать</a>
+            </li>
+            <li class="extra-catalog__item product">
+              <h3 class="product__title product__title--extra">Питьевая вода</h3>
+              <table class="product__features">
+                <tr>
+                  <td>5 литров</td>
+                  <td>50 Р.</td>
+                </tr>
+              </table>
+              <a class="button button--order" href="blank.html" aria-label="Заказать питьевую воду 5 литров">Заказать</a>
+            </li>
+            <li class="extra-catalog__item product">
+              <h3 class="product__title product__title--extra">Молоко</h3>
+              <table class="product__features">
+                <tr>
+                  <td>1 литр</td>
+                  <td>100 Р.</td>
+                </tr>
+              </table>
+              <a class="button button--order" href="blank.html" aria-label="Заказать молоко 1 литр">Заказать</a>
+            </li>
+            <li class="extra-catalog__item product">
+              <h3 class="product__title product__title--extra">Витамины</h3>
+              <table class="product__features">
+                <tr>
+                  <td>1 упаковка (30 г)</td>
+                  <td>300 Р.</td>
+                </tr>
+              </table>
+              <a class="button button--order" href="blank.html" aria-label="Заказать упаковку витамин 30 грамм">Заказать</a>
+            </li>
+          </ul>
+        </section>
+        <section class="catalog-content__promo promo-gift">
+          <h2 class="visually-hidden">Подарок при покупке</h2>
+          <img class="promo-gift__image" src="https://via.placeholder.com/78x80" width="78" height="80" alt="иконка-изображение подарка" aria-hidden="true">
+          <p class="promo-gift__text">Закажите все и получите чехол для кота в подарок!</p>
+        </section>
+      </div>
     </main>
     <footer class="page-footer">
       <section class="page-footer__top-section page-footer__top-section--inner-pages">

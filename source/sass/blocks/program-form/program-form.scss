@@ -34,3 +34,11 @@
 .program-form__legend {
   color: $basic-black;
 }
+
+.program-form__footer {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
