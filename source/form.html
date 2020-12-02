@@ -2,27 +2,36 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page-body">
     <header class="page-header">
-      <a class="page-header__logo-image" href="#">
+      <a class="page-header__logo-middle" href="#">
+        <img src="https://via.placeholder.com/174x52" width="174" height="52" alt="логотип Cat Energy">
+      </a>
+      <a class="page-header__logo-big" href="#">
+        <img src="https://via.placeholder.com/202x56" width="202" height="56" alt="логотип Cat Energy">
+      </a>
+      <a class="page-header__logo-img">
         <img src="https://via.placeholder.com/34x38" width="34" height="38" alt="графический логотип Cat Energy">
       </a>
-      <img class="page-header__logo-text" src="https://via.placeholder.com/101x18" width="101" height="18" alt="Cat Energy">
+      <a class="page-header__logo-text">
+        <img src="https://via.placeholder.com/101x18" width="101" height="18" alt="Cat Energy">
+      </a>
       <nav class="page-header__nav main-nav">
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
-        <ul class="main-nav__list">
-          <li class="main-nav__item">
+        <ul class="main-nav__list menu">
+          <li class="main-nav__item  menu__item">
             <a class="main-nav__link" href="index.html">Главная</a>
           </li>
-          <li class="main-nav__item">
+          <li class="main-nav__item  menu__item">
             <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
           </li>
-          <li class="main-nav__item">
+          <li class="main-nav__item  menu__item">
             <a class="main-nav__link">Подбор программы</a>
           </li>
         </ul>
@@ -32,7 +41,7 @@
       <h1 class="first-level-title">Подбор программы</h1>
       <p class="form-content__subtitle">Заполните анкету, и мы подберем программу питания для вашего кота</p>
       <form class="form-content__program-form program-form" method="post" action="https://echo.htmlacademy.ru/">
-        <fieldset class="program-form__item">
+        <fieldset class="program-form__item program-name-and-program">
           <ul class="program-form__list">
             <li class="program-form__option">
               <label class="program-form__label program-form__label--filter-label" for="name">Имя:*</label>
@@ -64,7 +73,7 @@
         </fieldset>
         <fieldset class="program-form__item">
           <legend class="program-form__title section-title section-title--form-page">Контактные данные (владельца кота)</legend>
-          <ul class="program-form__list">
+          <ul class="program-form__list program-contacts">
             <li class="program-form__option">
               <label class="program-form__label" for="email">E-mail:*</label>
               <input class="program-form__input program-form__input--email" id="email" type="email" name="email" placeholder="kuklachev@gmail.com" required>
@@ -80,9 +89,9 @@
           <label class="visually-hidden" for="comment">Оставьте комментарий</label>
           <textarea class="program-form__input program-form__input--comment" id="comment" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
         </fieldset>
-        <fieldset class="program-form__item">
+        <fieldset class="program-form__item program-extra">
           <legend class="program-form__title section-title section-title--form-page">Дополнительно</legend>
-          <ul class="program-form__list">
+          <ul class="program-form__list program-extra__list">
             <li class="program-form__option">
               <input class="program-form__input-checkbox program-form__input-checkbox--sweetener" id="sweetener" type="checkbox" name="sweetener" checked>
               <label class="program-form__label program-form__label--special-color" for="sweetener">Сахарозаменитель</label>
@@ -101,8 +110,10 @@
             </li>
           </ul>
         </fieldset>
-        <button class="button program-form__button" type="submit">Отправить заявку</button>
-      <p class="program-form__legend">* — Обязательные поля</p>
+        <div class="program-form__footer">
+          <button class="button program-form__button" type="submit">Отправить заявку</button>
+          <p class="program-form__legend">* — Обязательные поля</p>
+        </div>
       </form>
     </main>
     <footer class="page-footer">
