@@ -4,6 +4,8 @@
 }
 
 .promo {
+  display: flex;
+  flex-direction: column;
   min-height: 480px;
   padding-top: 27px;
   background: linear-gradient(0deg, $background-green, $background-green), url("../img/index-background-desktop-1.jpg");
@@ -20,8 +22,9 @@
     min-height: 555px;
     padding: $desktop-min-padding;
     padding-top: 27px;
-    background: linear-gradient(0deg, $background-green, $background-green), url("../img/index-background-desktop-1.jpg");
+    background: linear-gradient(90deg, $basic-white 50%, $background-green 50%), url("../img/index-background-desktop-1.jpg");
     background-repeat: no-repeat, no-repeat;
+    background-position: 100%, 160%;
   }
 }
 
@@ -31,6 +34,8 @@
 
   @media (min-width: $tablet-width) {
     color: $basic-black;
+    font-size: 60px;
+    line-height: 60px;
   }
 }
 
@@ -42,12 +47,7 @@
 
   @media (min-width: $tablet-width) {
     color: $basic-black;
+    font-size: 20px;
+    line-height: 20px;
   }
-}
-
-.promo__button {
-  font-family: "Oswald", "Arial", sans-serif;
-  color: $basic-white;
-  text-transform: uppercase;
-  background-color: $button-green;
 }

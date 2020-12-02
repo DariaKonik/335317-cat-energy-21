@@ -20,3 +20,15 @@
   color: $button-special-text-color;
   background-color: $button-special-background;
 }
+
+.button--promo {
+  display: block;
+  color: $basic-white;
+  background-color: $button-green;
+  padding: 13px 72px 13px 72px;
+
+  @media (min-width: $tablet-width) {
+    width: 244px;
+    padding: 14px 26px 14px 26px;
+  }
+}

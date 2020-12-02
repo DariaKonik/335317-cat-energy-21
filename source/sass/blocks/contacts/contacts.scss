@@ -15,8 +15,17 @@
   font-family: "Oswald", "Arial", sans-serif;
   color: $basic-black;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 21px;
+  }
 }
 
 .contacts__text {
   line-height: 20px;
+
+  @media (min-width: $tablet-width) {
+    line-height: 20px;
+  }
 }
