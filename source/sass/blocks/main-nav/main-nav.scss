@@ -1,7 +1,23 @@
+.main-nav {
+  position: relative;
+}
+
 .main-nav__list {
   margin: 0;
   padding: 0;
   list-style: none;
+  display: block;
+  background-color: $basic-white;
+
+  @media (min-width: $tablet-width) {
+    max-width: 440px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 478px;
+  }
 }
 
 .main-nav__link {
@@ -12,4 +28,10 @@
   font-family: "Oswald", "Arial", sans-serif;
   color: $basic-black;
   text-color: uppercase;
+}
+
+.main-nav__toggle {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }

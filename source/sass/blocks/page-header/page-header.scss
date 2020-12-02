@@ -1,3 +1,40 @@
 .page-header {
+  min-height: $header-min-height;
+
   @include section-margins;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    padding: $tablet-min-padding;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: $desktop-min-padding;
+  }
+}
+
+.page-header__logo-img,
+.page-header__logo-text {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.page-header__logo-middle {
+  display: none;
+
+  @include tablet-only () {
+    display: block;
+  }
+}
+
+.page-header__logo-big {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
 }

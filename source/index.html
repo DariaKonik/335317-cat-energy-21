@@ -2,27 +2,36 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page-body">
     <header class="page-header">
-      <a class="page-header__logo-image" href="#">
+      <a class="page-header__logo-middle" href="#">
+        <img src="https://via.placeholder.com/174x52" width="174" height="52" alt="логотип Cat Energy">
+      </a>
+      <a class="page-header__logo-big" href="#">
+        <img src="https://via.placeholder.com/202x56" width="202" height="56" alt="логотип Cat Energy">
+      </a>
+      <a class="page-header__logo-img">
         <img src="https://via.placeholder.com/34x38" width="34" height="38" alt="графический логотип Cat Energy">
       </a>
-      <img class="page-header__logo-text" src="https://via.placeholder.com/101x18" width="101" height="18" alt="Cat Energy">
-      <nav class="page-header__nav main-nav">
+      <a class="page-header__logo-text">
+        <img src="https://via.placeholder.com/101x18" width="101" height="18" alt="Cat Energy">
+      </a>
+      <nav class="page-header__nav main-nav main-nav--open main-nav--closed main-nav--nojs">
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
-        <ul class="main-nav__list">
-          <li class="main-nav__item">
+        <ul class="main-nav__list menu">
+          <li class="main-nav__item menu__item">
             <a class="main-nav__link">Главная</a>
           </li>
-          <li class="main-nav__item">
+          <li class="main-nav__item menu__item">
             <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
           </li>
-          <li class="main-nav__item">
+          <li class="main-nav__item menu__item">
             <a class="main-nav__link" href="form.html">Подбор программы</a>
           </li>
         </ul>
@@ -36,19 +45,19 @@
             <h2 class="second-level-title promo__title">Функциональное питание для котов</h2>
             <p class="promo__slogan">Занялся собой? Займись котом!</p>
           </header>
-          <img src="https://via.placeholder.com/280x279" width="280" height="270" alt="Пластиковый стаканчик с питанием Cat Energy запаяный фольгированой крышкой с фирменным логотипом на ней. Объем порции 500 грамм">
+          <img class="promo__image" src="https://via.placeholder.com/280x279" width="280" height="270" alt="Пластиковый стаканчик с питанием Cat Energy запаяный фольгированой крышкой с фирменным логотипом на ней. Объем порции 500 грамм">
           <a class="button promo__button" href="form.html">Подобрать программу</a>
         </div>
       </section>
       <section class="goods">
         <div class="goods__wrapper">
           <h2 class="visually-hidden">Предложения от Cat Energy</h2>
-          <article class="goods__section">
+          <article class="goods__article">
             <h3 class="third-level-title">Похудение</h3>
             <p>Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
             <a class="goods__link" href="#">Каталог slim</a>
           </article>
-          <article class="goods__section">
+          <article class="goods__article">
             <h3 class="third-level-title">Набор массы</h3>
             <p>Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
             <a class="goods__link" href="#">Каталог pro</a>
@@ -68,23 +77,24 @@
       </section>
       <section class="results">
         <div class="results__wrapper">
-          <h2 class="visually-hidden">Результат замены обычного корма на корм Cat Energy Slim </h2>
-          <h3 class="second-level-title">Живой пример</h3>
-          <p>Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
-          <dl class="results__list">
-            <div class="results__item">
-              <dt class="results__number">5 КГ</dt>
-              <dd class="results__description">снижение веса</dd>
-            </div>
-            <div class="results__item">
-              <dt class="results__number">60 ДНЕЙ</dt>
-              <dd class="results__description">затрачено времени</dd>
-            </div>
-          </dl>
-          <p class="results__legend">Затраты на питание: <span class="results__cost">15 000 РУБ.</span></p>
+          <div class="results__content">
+            <h2 class="visually-hidden">Результат замены обычного корма на корм Cat Energy Slim </h2>
+            <h3 class="second-level-title results__title">Живой пример</h3>
+            <p>Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
+            <dl class="results__list">
+              <div class="results__item">
+                <dt class="results__number">5 КГ</dt>
+                <dd class="results__description">снижение веса</dd>
+              </div>
+              <div class="results__item">
+                <dt class="results__number">60 ДНЕЙ</dt>
+                <dd class="results__description">затрачено времени</dd>
+              </div>
+            </dl>
+            <p class="results__legend">Затраты на питание: <span class="results__cost">15 000 РУБ.</span></p>
+          </div>
           <div class="results__slider">
             <img class="results__image results__image--fat-cat" src="https://via.placeholder.com/311x232" width="311" height="232" alt="Толстый кот до замены корма на Cat Energy Slim">
-            <img class="results__image results__image--slim-cat" src="https://via.placeholder.com/311x232" width="311" height="232" alt="Тонкий кот после замены корма на Cat Energy Slim">
             <div class="results__toggle-panel toggle-panel">
               <span class="toggle-panel__label">Было</span>
               <div class="toggle-panel__toggle">

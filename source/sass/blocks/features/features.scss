@@ -1,8 +1,31 @@
+.features {
+  min-height: 311px;
+}
+
 .features__wrapper {
   @include section-margins;
   margin-bottom: 42px;
+
+  @media (min-width: $tablet-width) {
+    padding: $tablet-min-padding;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: $desktop-min-padding;
+  }
 }
 
 .features__list {
-  list-style: none;
+  @include list-style-blocks;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 153px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 94px;
+  }
 }
