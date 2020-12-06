@@ -7,7 +7,6 @@
   padding: 0;
   list-style: none;
   display: block;
-  background-color: $basic-white;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -55,6 +54,7 @@
     position: absolute;
     top: 65px;
     left: 0;
+    background-color: $basic-white;
   }
 }
 

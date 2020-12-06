@@ -4,7 +4,7 @@
 
 .features__wrapper {
   @include section-margins;
-  margin-bottom: 42px;
+  margin-bottom: 46px;
 
   @media (min-width: $tablet-width) {
     padding: $tablet-min-padding;
@@ -15,10 +15,14 @@
   }
 }
 
+.features__title {
+  margin-bottom: 42px;
+}
+
 .features__list {
   @include list-style-blocks;
   display: grid;
-  grid-gap: 20px;
+  grid-gap: 27px;
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 1fr 1fr;
@@ -28,6 +32,62 @@
   @media (min-width: $desktop-width) {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 94px;
+  }
+}
+
+.features__item {
+  position: relative;
+  margin-left: 60px;
+  padding-left: 16px;
+
+    &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -60px;
+    width: 60px;
+    height: 60px;
+    transform: translatey(-50%);
+  }
+}
+
+.features__item:first-of-type {
+  &::before {
+    background: url("../img/point_first.svg"), $points-green;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+}
+
+.features__item:nth-of-type(2) {
+  &::before {
+    background: url("../img/point_second.svg"), $points-green;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+}
+
+.features__item:nth-of-type(2) {
+  &::before {
+    background: url("../img/point_second.svg"), $points-green;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+}
+
+.features__item:nth-of-type(3) {
+  &::before {
+    background: url("../img/point_third.svg"), $points-green;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+}
+
+.features__item:nth-of-type(4) {
+  &::before {
+    background: url("../img/point_forth.svg"), $points-green;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
   }
 }
 
