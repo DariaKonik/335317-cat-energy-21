@@ -1,5 +1,6 @@
 .button {
   display: inline-block;
+  font-weight: 400;
   font-size: 14px;
   font-family: "Oswald", "Arial", sans-serif;
   line-height: 18px;
@@ -9,6 +10,11 @@
   vertical-align: middle;
   border: none;
   cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .button--order {
@@ -24,10 +30,18 @@
 .button--promo {
   color: $basic-white;
   background-color: $button-green;
+  margin-left: -5px;
   padding: 10px 44px 13px 44px;
 
   @media (min-width: $tablet-width) {
-    max-width: 244px;
-    padding: 14px 26px 14px 26px;
+    z-index: 2;
+    padding: 14px 20px 14px 20px;
+    width: 244px;
+    min-height: 54px;
+    box-sizing: border-box;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 0px;
   }
 }

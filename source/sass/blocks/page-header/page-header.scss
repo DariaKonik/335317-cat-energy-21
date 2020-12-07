@@ -1,21 +1,22 @@
 .page-header {
   position: relative;
-  min-height: $header-min-height;
-  background-color: transparent;
-
-  @include section-margins;
+  margin-top: 12px;
+  padding: $min-page-padding;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   justify-content: space-between;
   align-items: center;
+  background-color: transparent;
 
   @media (min-width: $tablet-width) {
+    margin-top: 22px;
     padding: $tablet-min-padding;
     grid-gap: 40px;
     grid-template-columns: 174px auto;
   }
 
   @media (min-width: $desktop-width) {
+    margin-top: 53px;
     padding: $desktop-min-padding;
     background: linear-gradient(90deg, $basic-white 50%, $background-green 50%), url("../img/index-background-desktop-1.jpg");
     background-repeat: no-repeat, no-repeat;

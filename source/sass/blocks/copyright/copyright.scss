@@ -1,13 +1,10 @@
-.copyright {
+.copyright-link {
   display: flex;
+  margin-left: auto;
   justify-content: space-between;
   flex-wrap: wrap;
 
   @media (min-width: $tablet-width) {
     width: 163px;
   }
-}
-
-.copyright__text {
-  line-height: 18.4px;
 }

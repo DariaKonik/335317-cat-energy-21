@@ -1,3 +1,12 @@
+.toggle-panel {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 71%;
+  min-height: 40px;
+  margin: 30px auto 0 auto;
+}
+
 .toggle-panel__label {
   font-size: 16px;
   line-height: 20px;
@@ -9,4 +18,25 @@
     font-size: 20px;
     line-height: 30px;
   }
+}
+
+.toggle-panel__toggle {
+  display: flex;
+  align-items: center;
+  width: 84px;
+  height: 13px;
+  border: 1px solid $line-results-color;
+  border-radius: 10px;
+  background-color: $basic-white;
+  box-sizing: border-box;
+}
+
+.toggle-panel__tumbler {
+  margin-left: 3px;
+  width: 35px;
+  height: 6px;
+  border: 1px solid $apple-green;
+  border-radius: 10px;
+  background-color: $apple-green;
+  box-sizing: border-box;
 }

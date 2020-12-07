@@ -2,7 +2,7 @@
   display: grid;
   grid-gap: 20px;
   padding: $min-page-padding;
-  margin-bottom: 27px;
+  margin-bottom: 45px;
 
   @media (min-width: $tablet-width) {
     padding: $tablet-min-padding;
@@ -13,6 +13,7 @@
     padding: $desktop-min-padding;
     grid-template-columns: 1fr 1fr;
     grid-gap: 80px;
+    margin-bottom: 71px;
   }
 }
 
@@ -52,10 +53,15 @@
     width: 30px;
     height: 20px;
     background: url("../img/arrow.svg") no-repeat 50% 50%;
-    transform: translatey(-50%);
+    transform: translateY(-50%);
+
+    @media (min-width: $tablet-width) {
+      right: -50px;
+    }
   }
 
   @media (min-width: $tablet-width) {
+    margin: 26px 0 0 0;
     font-size: 20px;
     line-height: 30px;
   }
@@ -74,7 +80,12 @@
     left: -50px;
     width: 50px;
     height: 53px;
-    transform: translatey(-50%);
+    transform: translateY(-50%);
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 140px;
+    margin-bottom: 73px;
   }
 }
 
@@ -85,8 +96,8 @@
 }
 
 .goods__article:nth-of-type(2) .goods__title {
-    margin-left: 60px;
-    padding-left: 10px;
+  margin-left: 60px;
+  padding-left: 10px;
 
   &::before {
     background: url("../img/cat_back-second.svg") no-repeat 50% 50%;
@@ -94,10 +105,19 @@
     width: 67px;
     height: 50px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 150px;
+  }
 }
 
 .goods__text {
   margin: 0;
   padding-bottom: 24px;
   border-bottom: 1px solid $simple-line-color;
+
+  @media (min-width: $desktop-width) {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
 }

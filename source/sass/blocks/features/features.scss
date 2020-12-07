@@ -1,10 +1,18 @@
 .features {
+  margin-bottom: 46px;
   min-height: 311px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 80px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
 }
 
 .features__wrapper {
-  @include section-margins;
-  margin-bottom: 46px;
+  padding: $min-page-padding;
 
   @media (min-width: $tablet-width) {
     padding: $tablet-min-padding;
@@ -26,12 +34,14 @@
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 1fr 1fr;
-    grid-gap: 153px;
+    grid-column-gap: 60px;
+    grid-row-gap: 37px;
   }
 
   @media (min-width: $desktop-width) {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 94px;
+    grid-template-columns: repeat(4, min-content);
+    grid-gap: 0;
+    justify-content: space-between;
   }
 }
 
@@ -40,28 +50,36 @@
   margin-left: 60px;
   padding-left: 16px;
 
-    &::before {
+  @media (min-width: $tablet-width) {
+    margin-left: 0;
+    padding-left: 0;
+  }
+
+  &::before {
     content: "";
     position: absolute;
     top: 50%;
     left: -60px;
     width: 60px;
     height: 60px;
-    transform: translatey(-50%);
+    transform: translateY(-50%);
+
+    @media (min-width: $tablet-width) {
+      top: 70px;
+      left: 0px;
+      width: 80px;
+      height: 80px;
+    }
   }
+}
+
+.features__text {
+  margin-top: 140px;
 }
 
 .features__item:first-of-type {
   &::before {
     background: url("../img/point_first.svg"), $points-green;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-  }
-}
-
-.features__item:nth-of-type(2) {
-  &::before {
-    background: url("../img/point_second.svg"), $points-green;
     background-repeat: no-repeat;
     background-position: 50% 50%;
   }
@@ -93,29 +111,32 @@
 
 @media (min-width: $tablet-width) {
   .features__item {
-    width: 230px;
     min-height: 280px;
   }
 }
 
 @media (min-width: $tablet-width) {
   .features__item:nth-child(1) {
-    background: url("../img/1.svg") no-repeat 60% 100%;
-    background-size: contain;
+    width: 230px;
+    background: url("../img/1.svg") no-repeat 157% 56%;
+    background-size: 81% 81%;
   }
 
   .features__item:nth-child(2) {
-    background: url("../img/2.svg") no-repeat 60% 100%;
-    background-size: contain;
+    width: 246px;
+    background: url("../img/2.svg") no-repeat 163% 56%;
+    background-size: 81% 81%;
   }
 
   .features__item:nth-child(3) {
-    background: url("../img/3.svg") no-repeat 60% 100%;
-    background-size: contain;
+    width: 247px;
+    background: url("../img/3.svg") no-repeat 184% 60%;
+    background-size: 83% 83%;
   }
 
   .features__item:nth-child(4) {
-    background: url("../img/4.svg") no-repeat 60% 100%;
-    background-size: contain;
+    width: 249px;
+    background: url("../img/4.svg") no-repeat 179% 56%;
+    background-size: 81% 81%;
   }
 }

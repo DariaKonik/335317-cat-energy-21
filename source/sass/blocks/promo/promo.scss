@@ -1,29 +1,34 @@
 .promo__wrapper {
+  position: relative;
   display: flex;
   flex-direction: column;
-  padding: $min-page-padding;
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .promo {
-  min-height: 480px;
+  margin-bottom: 22px;
+  padding: $min-page-padding;
   padding-top: 27px;
-  padding-bottom: 0;
   text-align: center;
   background: linear-gradient(180deg, $background-green 59%, $basic-white 59%), url("../img/index-background-desktop-1.jpg");
   background-repeat: no-repeat, no-repeat;
 
   @media (min-width: $tablet-width) {
     min-height: 850px;
-    padding: $tablet-min-padding;
-    padding-top: 27px;
+    padding: 52px 29px 0 117 - 21px;
     text-align: left;
     background: $basic-white;
+    box-sizing: border-box;
   }
 
   @media (min-width: $desktop-width) {
-    min-height: 555px;
-    padding: $desktop-min-padding;
-    padding-top: 27px;
+    margin-bottom: 82px;
+    min-height: 579px;
+    padding: 106px 110px 0 190px;
     background: linear-gradient(90deg, $basic-white 50%, $background-green 50%), url("../img/index-background-desktop-1.jpg");
     background-repeat: no-repeat, no-repeat;
     background-position: 100% 90%, 100% 90%;
@@ -50,12 +55,30 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
+    margin-top: 41px;
+    margin-bottom: 49px;
     color: $basic-black;
     font-size: 20px;
     line-height: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 52px;
   }
 }
 
 .promo__image {
   margin-bottom: 3px;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: 250px;
+    z-index: 1;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: static;
+    grid-row: 1/3;
+    grid-column: 2/3;
+  }
 }

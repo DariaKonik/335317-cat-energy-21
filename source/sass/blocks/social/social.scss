@@ -2,6 +2,7 @@
   @include list-style-blocks;
   display: flex;
   justify-content: space-between;
+  margin: auto;
   width: 130px;
 
   @media (min-width: $tablet-width) {
