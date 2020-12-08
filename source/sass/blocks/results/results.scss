@@ -35,12 +35,12 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 63px;
- }
+  }
 
   @media (min-width: $desktop-width) {
     padding-top: 58px;
     margin-bottom: 146px;
- }
+  }
 }
 
 .results__data {
@@ -67,10 +67,10 @@
   grid-template-columns: 1fr 1fr;
   grid-column-gap: 31px;
 
-    @media (min-width: $tablet-width) {
-      grid-column-gap: 42px;
-      margin: 0;
-    }
+  @media (min-width: $tablet-width) {
+    grid-column-gap: 42px;
+    margin: 0;
+  }
 }
 
 .results__item {
@@ -134,7 +134,7 @@
 
 .results__description br {
   @media (min-width: $tablet-width) {
-      display: none;
+    display: none;
   }
 }
 
@@ -161,9 +161,9 @@
 }
 
 .results__cost {
-   @media (min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     margin-left: 63px;
-   }
+  }
 }
 
 .results__slider {
