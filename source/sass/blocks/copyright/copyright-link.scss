@@ -1,10 +1,10 @@
 .copyright-link {
   display: flex;
-  margin-left: auto;
   justify-content: space-between;
   flex-wrap: wrap;
 
   @media (min-width: $tablet-width) {
+    margin-left: auto;
     width: 163px;
   }
 }

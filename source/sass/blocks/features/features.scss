@@ -74,7 +74,11 @@
 }
 
 .features__text {
-  margin-top: 140px;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 140px;
+  }
 }
 
 .features__item:first-of-type {

@@ -7,7 +7,7 @@
 
   @media (min-width: $tablet-width) {
     grid-column-gap: 295px;
-    padding: 66px 72px 58px 71px;
+    padding: 67px 72px 58px 71px;
   }
 
   @media (min-width: $desktop-width) {
@@ -50,6 +50,8 @@
 }
 
 .contacts__city {
-  display: inline-block;
-  margin-top: 20px;
+  @media (min-width: $tablet-width) {
+    display: inline-block;
+    margin-top: 20px;
+  }
 }

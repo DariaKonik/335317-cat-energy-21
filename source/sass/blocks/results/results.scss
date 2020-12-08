@@ -7,13 +7,13 @@
   @media (min-width: $tablet-width) {
     padding: $tablet-min-padding;
     padding-bottom: 64px;
-    background: linear-gradient(to bottom, $basic-white 65%, $results-background 35%);
+    background: linear-gradient(to bottom, $basic-white 55%, $results-background 55%);
   }
 
   @media (min-width: $desktop-width) {
     padding: $desktop-min-padding;
     padding-bottom: 62px;
-    background: linear-gradient(to bottom, $basic-white 20%, $results-background 20%);
+    background: linear-gradient(to bottom, $basic-white 30%, $results-background 30%);
   }
 }
 
@@ -182,8 +182,8 @@
   object-position: -20px 0;
 
   @media (min-width: $tablet-width) {
-    width: 485px;
-    height: 517px;
+    width: 476px;
+    height: 550px;
   }
 
   @media (min-width: $desktop-width) {
