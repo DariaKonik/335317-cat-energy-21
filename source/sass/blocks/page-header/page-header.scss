@@ -1,7 +1,6 @@
 .page-header {
   position: relative;
-  margin-top: 12px;
-  padding: $min-page-padding;
+  padding: 11px 20px 17px 21px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   justify-content: space-between;
@@ -61,7 +60,7 @@ button.page-header__toggle {
     &::after {
       content: "";
       position: absolute;
-      margin: auto;
+      right: 20px;
       width: 25px;
       height: 1.5px;
       background-color: $basic-black;
