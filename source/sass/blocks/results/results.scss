@@ -12,7 +12,7 @@
 
   @media (min-width: $desktop-width) {
     padding: $desktop-min-padding;
-    padding-bottom: 62px;
+    padding-bottom: 67px;
     background: linear-gradient(to bottom, $basic-white 30%, $results-background 30%);
   }
 }
@@ -151,7 +151,7 @@
   @media (min-width: $tablet-width) {
     margin: 0;
     font-size: 20px;
-    line-height: 20px;
+    line-height: 30px;
     text-align: right;
   }
 
@@ -162,7 +162,7 @@
 
 .results__cost {
   @media (min-width: $desktop-width) {
-    margin-left: 63px;
+    margin-left: 49px;
   }
 }
 

@@ -89,3 +89,7 @@ button.page-header__toggle {
     }
   }
 }
+
+.page-header__toggle--nojs {
+  display: none;
+}
