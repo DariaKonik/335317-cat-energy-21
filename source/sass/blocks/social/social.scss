@@ -10,3 +10,33 @@
     width: 129px;
   }
 }
+
+.social__link svg {
+  fill: $dove-grey;
+
+  &:hover,
+  &:focus {
+    fill: $footer-green-hover;
+  }
+
+  &:active {
+    fill: $footer-green-hover;
+    opacity: 0.3;
+  }
+}
+
+.social__link--facebook svg {
+  fill: none;
+  stroke: $dove-grey;
+
+  &:hover,
+  &:focus {
+    fill: none;
+    stroke: $footer-green-hover;
+  }
+
+  &:active {
+    stroke: $footer-green-hover;
+    opacity: 0.3;
+  }
+}

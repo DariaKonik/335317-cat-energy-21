@@ -82,7 +82,9 @@
 }
 
 .features__item:first-of-type {
-  margin-right: 20px;
+  @media (min-width: $desktop-width) {
+    margin-right: 20px;
+  }
 
   &::before {
     background: url("../img/point_first.svg"), $points-green;
