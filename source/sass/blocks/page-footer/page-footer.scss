@@ -19,7 +19,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 66px  110px 98px  110px;
+    padding: 57px  110px 58px  110px;
   }
 }
 
@@ -36,7 +36,7 @@
   @media (max-width: $mobile-width-only) {
     display: flex;
     align-content: center;
-    min-height: 95px;
+    min-height: 97px;
     border-bottom: 1px solid $simple-line-color;
   }
 }
@@ -63,6 +63,10 @@
 .page-footer__logo-text {
   display: block;
   margin: auto;
+
+  @media (max-width: $mobile-width-only) {
+    padding-top: 10px;
+  }
 
   @media (min-width: $tablet-width) {
     margin: 0;

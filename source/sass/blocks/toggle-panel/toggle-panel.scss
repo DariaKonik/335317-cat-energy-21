@@ -65,9 +65,10 @@
     margin-left: 200px;
     width: 34px;
     height: 34px;
-    border-color: $basic-white;
+    border-color: $line-results-color;
     border-radius: 50%;
-    box-shadow: inset 0 0 0 11px $basic-white;
-    background-color: $apple-green;
+    box-shadow:
+      $toggle-shadow,
+      inset 0 0 0 12px $basic-white;
   }
 }

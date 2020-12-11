@@ -30,12 +30,11 @@
 .button--promo {
   color: $basic-white;
   background-color: $button-green;
-  margin-left: -5px;
-  padding: 10px 44px 13px 44px;
+  padding: 11px 44px 12px 44px;
 
   @media (min-width: $tablet-width) {
     z-index: 2;
-    padding: 14px 20px 14px 20px;
+    padding: 16px 20px 16px 20px;
     width: 244px;
     min-height: 54px;
     box-sizing: border-box;

@@ -24,13 +24,13 @@
 }
 
 .features__title {
-  margin-bottom: 42px;
+  margin-bottom: 40px;
 }
 
 .features__list {
   @include list-style-blocks;
   display: grid;
-  grid-gap: 27px;
+  grid-row-gap: 28px;
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 1fr 1fr;
@@ -47,8 +47,8 @@
 
 .features__item {
   position: relative;
-  margin-left: 60px;
-  padding-left: 16px;
+  margin-left: 59px;
+  padding-left: 20px;
 
   @media (min-width: $tablet-width) {
     margin-left: 0;
