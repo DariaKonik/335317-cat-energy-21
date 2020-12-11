@@ -19,8 +19,7 @@
 }
 
 .button--order {
-  color: $basic-white;
-  background-color: $button-green;
+  @include green-button;
 }
 
 .button--show-all {
@@ -29,12 +28,12 @@
 }
 
 .button--promo {
-  color: $basic-white;
-  background-color: $button-green;
+  @include green-button;
   padding: 11px 44px 12px 44px;
 
   @media (min-width: $tablet-width) {
     z-index: 2;
+    margin-left: -5px;
     padding: 16px 20px 16px 20px;
     width: 244px;
     min-height: 54px;

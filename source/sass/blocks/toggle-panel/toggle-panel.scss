@@ -2,9 +2,9 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 23px auto 0 auto;
+  margin: 21px auto 0 auto;
   width: 71%;
-  min-height: 37px;
+  min-height: 40px;
 
   @media (min-width: $tablet-width) {
     margin: 0 auto;
@@ -18,15 +18,28 @@
 }
 
 .toggle-panel__label {
+  display: inline-block;
   font-size: 16px;
   line-height: 20px;
   font-family: "Oswald", "Arial", sans-serif;
   color: $basic-black;
   text-transform: uppercase;
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 25px;
+    padding-bottom: 3px;
+    border-bottom: 1px dotted $line-results-color;
+
+    &:hover,
+    &:focus {
+      border-bottom: 1px solid $line-results-color;
+    }
+
+    &:active {
+      border: none;
+    }
   }
 }
 
@@ -56,10 +69,10 @@
   margin-left: 3px;
   width: 35px;
   height: 6px;
-  border: 1px solid $apple-green;
   border-radius: 10px;
   background-color: $apple-green;
   box-sizing: border-box;
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
     margin-left: 200px;
@@ -70,5 +83,9 @@
     box-shadow:
       $toggle-shadow,
       inset 0 0 0 12px $basic-white;
+
+    &:active {
+      border: 1px solid $apple-green;
+    }
   }
 }

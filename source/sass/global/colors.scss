@@ -1,7 +1,9 @@
 $basic-white: #ffffff;
+$opacity-white: rgba(255, 255, 255, 0.3);
 $basic-black: #000000;
 $extra-black: #222222;
 $apple-green: #68b738;
+$apple-green-dark: #5eaa2f;
 $concrete-grey: #f2f2f2;
 $gallery-grey: #eaeaea;
 $alto-grey: #d9d9d9;
@@ -18,4 +20,6 @@ $button-special-text-color: $tundora-grey;
 $button-special-background: $concrete-grey;
 $points-green: $apple-green;
 $button-green: $apple-green;
+$button-green-hover: $apple-green-dark;
+$hover-line: $apple-green;
 $background-green: transparentize($apple-green, 0.15);

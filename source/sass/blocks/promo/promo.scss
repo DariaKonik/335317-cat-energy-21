@@ -17,8 +17,9 @@
   background-repeat: no-repeat, no-repeat;
 
   @media (min-width: $tablet-width) {
-    min-height: 848px;
-    padding: 60px 29px 0 117px;
+    margin: 0;
+    min-height: 861px;
+    padding: 50px 29px 0 117px;
     text-align: left;
     background: $basic-white;
     box-sizing: border-box;
@@ -26,8 +27,8 @@
 
   @media (min-width: $desktop-width) {
     margin-bottom: 82px;
-    min-height: 579px;
-    padding: 106px 110px 0 190px;
+    min-height: 573px;
+    padding: 102px 110px 0 190px;
     background: linear-gradient(90deg, $basic-white 50%, $background-green 50%), url("../img/index-background-desktop-1.jpg");
     background-repeat: no-repeat, no-repeat;
     background-position: 100% 90%, 100% 90%;

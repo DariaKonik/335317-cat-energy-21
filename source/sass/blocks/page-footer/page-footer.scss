@@ -33,6 +33,8 @@
 }
 
 .page-footer__logo-wrapper {
+  cursor: pointer;
+
   @media (max-width: $mobile-width-only) {
     display: flex;
     align-content: center;
@@ -55,6 +57,10 @@
   display: flex;
   align-items: center;
 
+  &:active {
+    opacity: 0.3;
+  }
+
   @media (max-width: $mobile-width-only) {
     min-height: 78px;
   }
@@ -64,8 +70,17 @@
   display: block;
   margin: auto;
 
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
   @media (max-width: $mobile-width-only) {
-    padding-top: 10px;
+    padding-top: 3px;
   }
 
   @media (min-width: $tablet-width) {

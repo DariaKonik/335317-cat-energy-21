@@ -15,3 +15,18 @@ $toggle-shadow: 0 1px 3px rgba(0, 0, 0, 0.16);
   margin: 0;
   padding: 0;
 }
+
+@mixin green-button {
+  color: $basic-white;
+  background-color: $button-green;
+
+  &:hover,
+  &:focus {
+    background-color: $button-green-hover;
+  }
+
+  &:active {
+    background-color: $button-green-hover;
+    color: $opacity-white;
+  }
+}

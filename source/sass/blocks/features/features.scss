@@ -24,7 +24,7 @@
 }
 
 .features__title {
-  margin-bottom: 40px;
+  margin-bottom: 42px;
 }
 
 .features__list {
@@ -77,11 +77,13 @@
   margin: 0;
 
   @media (min-width: $tablet-width) {
-    margin-top: 140px;
+    margin-top: 142px;
   }
 }
 
 .features__item:first-of-type {
+  margin-right: 20px;
+
   &::before {
     background: url("../img/point_first.svg"), $points-green;
     background-repeat: no-repeat;
