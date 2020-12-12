@@ -1,18 +1,25 @@
 .page-header {
-  min-height: $header-min-height;
-
-  @include section-margins;
+  position: relative;
+  padding: 11px 20px 13px 21px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  justify-content: space-between;
   align-items: center;
+  background-color: transparent;
 
   @media (min-width: $tablet-width) {
+    margin-top: 22px;
     padding: $tablet-min-padding;
-    grid-template-columns: 1fr 1fr;
+    grid-gap: 40px;
+    grid-template-columns: 174px auto;
   }
 
   @media (min-width: $desktop-width) {
+    margin-top: 50px;
     padding: $desktop-min-padding;
+    background: linear-gradient(90deg, $basic-white 50%, $background-green 50%), url("../img/index-background-desktop-1.jpg");
+    background-repeat: no-repeat, no-repeat;
+    background-position: 100% 6%, 100% 6%;
   }
 }
 

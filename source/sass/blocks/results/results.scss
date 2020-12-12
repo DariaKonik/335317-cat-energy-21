@@ -1,41 +1,194 @@
 .results {
-  min-height: 705px;
+  padding: $min-page-padding;
+  padding-top: 27px;
+  padding-bottom: 25px;
   background-color: $results-background;
 
   @media (min-width: $tablet-width) {
     padding: $tablet-min-padding;
-    background: linear-gradient(to bottom, $basic-white 65%, $results-background 35%);
+    padding-bottom: 64px;
+    background: linear-gradient(to bottom, $basic-white 55%, $results-background 55%);
   }
 
   @media (min-width: $desktop-width) {
     padding: $desktop-min-padding;
-    background: linear-gradient(to bottom, $basic-white 20%, $results-background 20%);
+    padding-bottom: 67px;
+    background: linear-gradient(to bottom, $basic-white 30%, $results-background 30%);
   }
 }
 
 .results__wrapper {
-  padding: $min-page-padding;
-  padding-top: 27px;
-  padding-botton: 25px;
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+  }
 
   @media (min-width: $desktop-width) {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 436px 1fr;
+    grid-column-gap: 134px;
+  }
+}
+
+.results__title {
+  margin-bottom: 33px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 63px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 58px;
+    margin-bottom: 146px;
+  }
+}
+
+.results__data {
+  margin-top: 27px;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: min-content 200px;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 54px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-top: 69px;
+  }
+}
+
+.results__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 31px;
+
+  @media (min-width: $tablet-width) {
+    grid-column-gap: 42px;
+    margin: 0;
+  }
+}
+
+.results__item {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 124px;
+  height: 56px;
+  border: solid 1px $line-results-color;
+  border-radius: 3px;
+  box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    width: 162px;
+    height: 72px;
   }
 }
 
 .results__number {
+  align-self: center;
   font-size: 24px;
   line-height: 24px;
   font-family: "Oswald", "Arial", sans-serif;
   color: $basic-black;
   text-transform: uppercase;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 37px;
+  }
+}
+
+.results__description {
+  position: absolute;
+  bottom: -16px;
+  align-self: center;
+  margin: 0;
+  width: 87px;
+  font-size: 12px;
+  line-height: 12px;
+  text-align: center;
+  background-color: $results-background;
+
+  @media (min-width: $tablet-width) {
+    bottom: -7px;
+    width: auto;
+    padding: 0 9px;
+    font-size: 14px;
+    line-height: 14px;
+    background-color: $basic-white;
+  }
+
+  @media (min-width: $desktop-width) {
+    bottom: -7px;
+    width: auto;
+    padding: 0 9px;
+    background-color: $results-background;
+  }
+}
+
+.results__description br {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .results__legend {
+  margin-top: 35px;
+  margin-bottom: 40px;
   font-size: 14px;
   line-height: 20px;
   font-family: "Oswald", "Arial", sans-serif;
   color: $basic-black;
   text-transform: uppercase;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: right;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 60px;
+  }
+}
+
+.results__cost {
+  @media (min-width: $desktop-width) {
+    margin-left: 49px;
+  }
+}
+
+.results__slider {
+  @media (min-width: $tablet-width) {
+    margin-top: 59px;
+    align-self: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+  }
+}
+
+.results__image {
+  object-fit: contain;
+  object-position: -20px 0;
+
+  @media (min-width: $tablet-width) {
+    width: 476px;
+    height: 550px;
+  }
+
+  @media (min-width: $desktop-width) {
+    object-position: -20px -58px;
+    width: 485px;
+    height: 517px - 58px;
+  }
 }

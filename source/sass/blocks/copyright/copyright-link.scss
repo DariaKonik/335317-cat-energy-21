@@ -1,0 +1,27 @@
+.copyright-link {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  @media (min-width: $tablet-width) {
+    margin-left: auto;
+    width: 163px;
+  }
+}
+
+.copyright-link__text {
+  fill: $tundora-grey;
+}
+
+.copyright-link__img {
+  fill: $dove-grey;
+}
+
+.copyright-link:hover .copyright-link__img,
+.copyright-link:focus .copyright-link__img {
+  fill: $footer-green-hover;
+}
+
+.copyright-link:active .copyright-link__img {
+  opacity: 0.3;
+}

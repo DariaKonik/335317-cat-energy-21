@@ -1,8 +1,9 @@
-$min-page-padding: 0 20px 0 20px;
+$min-page-padding: 0 20px 0 21px;
 $tablet-min-padding: 0 29px 0 30px;
 $desktop-min-padding: 0 110px 0 110px;
 $min-page-margin-top: 12px;
-$header-min-height: 57px;
+$header-min-height: 65px;
+$toggle-shadow: 0 1px 3px rgba(0, 0, 0, 0.16);
 
 @mixin section-margins {
   padding: $min-page-padding;
@@ -13,4 +14,19 @@ $header-min-height: 57px;
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+@mixin green-button {
+  color: $basic-white;
+  background-color: $button-green;
+
+  &:hover,
+  &:focus {
+    background-color: $button-green-hover;
+  }
+
+  &:active {
+    background-color: $button-green-hover;
+    color: $opacity-white;
+  }
 }

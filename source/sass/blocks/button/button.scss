@@ -1,22 +1,46 @@
 .button {
   display: inline-block;
-  font-size: 16px;
+  font-weight: 400;
+  font-size: 14px;
   font-family: "Oswald", "Arial", sans-serif;
-  line-height: 24px;
+  line-height: 18px;
   word-break: break-word;
   text-transform: uppercase;
   text-align: center;
   vertical-align: middle;
+  background-color: transparent;
   border: none;
   cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .button--order {
-  color: $basic-white;
-  background-color: $button-green;
+  @include green-button;
 }
 
 .button--show-all {
   color: $button-special-text-color;
   background-color: $button-special-background;
+}
+
+.button--promo {
+  @include green-button;
+  padding: 11px 44px 12px 44px;
+
+  @media (min-width: $tablet-width) {
+    z-index: 2;
+    margin-left: -5px;
+    padding: 16px 20px 16px 20px;
+    width: 244px;
+    min-height: 54px;
+    box-sizing: border-box;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 0;
+  }
 }
