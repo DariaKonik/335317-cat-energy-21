@@ -27,6 +27,16 @@
   padding-top: 27px;
   font-size: 36px;
   line-height: 36px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 54px;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 63px;
+  }
 }
 
 .second-level-title {

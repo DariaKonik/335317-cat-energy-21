@@ -37,11 +37,11 @@
       </nav>
     </header>
     <main class="form-content">
-      <h1 class="first-level-title">Подбор программы</h1>
+      <h1 class="first-level-title form-content__title">Подбор программы</h1>
       <p class="form-content__subtitle">Заполните анкету, и мы подберем программу питания для вашего кота</p>
       <form class="form-content__program-form program-form" method="post" action="https://echo.htmlacademy.ru/">
         <fieldset class="program-form__item program-name-and-program">
-          <ul class="program-form__list">
+          <ul class="program-form__list program-form__list--program-name">
             <li class="program-form__option">
               <label class="program-form__label program-form__label--filter-label" for="name">Имя:*</label>
               <input class="program-form__input program-form__input--name" id="name" type="text" name="name" placeholder="Барсик" required>
@@ -51,26 +51,26 @@
               <input class="program-form__input program-form__input--weight" id="weight" type="number" name="weight" placeholder="7" required>
             </li>
             <li class="program-form__option">
-              <label class="program-form__label program-form__label--filter-label" for="age">Возраст (лет):</label>
+              <label class="program-form__label program-form__label--filter-label" for="age">Возраст&nbsp;(лет):</label>
               <input class="program-form__input program-form__input--age" id="age" type="number" name="age" placeholder="7">
             </li>
           </ul>
-          <ul class="program-form__list program-filter-list">
+          <ul class="program-form__list program-form__list--filter">
             <li class="program-form__option">
-              <input class="program-form__input-radio" id="slimming" type="radio" name="program-filter" value="slimming" checked>
+              <input class="program-form__input-radio visually-hidden" id="slimming" type="radio" name="program-filter" value="slimming" checked>
               <label class="program-form__label program-form__label--special-color" for="slimming">Похудение</label>
             </li>
             <li class="program-form__option">
-              <input class="program-form__input-radio" id="weight-gain" type="radio" name="program-filter" value="weight-gain">
+              <input class="program-form__input-radio visually-hidden" id="weight-gain" type="radio" name="program-filter" value="weight-gain">
               <label class="program-form__label program-form__label--special-color" for="weight-gain">Набор массы</label>
             </li>
             <li class="program-form__option">
-              <input class="program-form__input-radio" id="undefined-filter" type="radio" name="program-filter" value="undefined-filter">
+              <input class="program-form__input-radio visually-hidden" id="undefined-filter" type="radio" name="program-filter" value="undefined-filter">
               <label class="program-form__label program-form__label--special-color" for="undefined-filter">Не знаю (Нужен ваш совет)</label>
             </li>
           </ul>
         </fieldset>
-        <fieldset class="program-form__item">
+        <fieldset class="program-form__item program-form-contacts">
           <legend class="program-form__title section-title section-title--form-page">Контактные данные (владельца кота)</legend>
           <ul class="program-form__list program-contacts">
             <li class="program-form__option">
@@ -83,7 +83,7 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset class="program-form__item">
+        <fieldset class="program-form__item program-form-comment">
           <legend class="program-form__title section-title section-title--form-page">Комментарий</legend>
           <label class="visually-hidden" for="comment">Оставьте комментарий</label>
           <textarea class="program-form__input program-form__input--comment" id="comment" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>

@@ -3,7 +3,7 @@
   padding-bottom: 32px;
 
   @media (min-width: $tablet-width) {
-    padding: $tablet-min-padding;
+    padding: 0 70px 0 69px;
   }
 
   @media (min-width: $desktop-width) {
@@ -11,11 +11,31 @@
   }
 }
 
+.form-content__title {
+  margin-bottom: 37px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 54px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 56px;
+  }
+}
+
+
 .form-content__subtitle {
-  margin-bottom: 19px;
+  margin-bottom: 39px;
   font-family: "Oswald", "Arial", sans-serif;
   color: $basic-black;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 66px;
+    max-width: 350px;
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .form-content__program-form {
