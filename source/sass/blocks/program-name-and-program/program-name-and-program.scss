@@ -1,7 +1,14 @@
 .program-name-and-program {
+  margin: 0 0 27px 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 83px 0;
+  }
+
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 80px;
+    margin: 0 0 71px 0;
   }
 }

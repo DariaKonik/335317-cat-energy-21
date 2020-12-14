@@ -1,0 +1,11 @@
+.program-form-comment {
+  margin: 0 0 23px 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 65px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 67px 0;
+  }
+}

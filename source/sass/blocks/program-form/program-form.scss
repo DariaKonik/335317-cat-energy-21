@@ -3,30 +3,6 @@
   border: none;
 }
 
-.program-name-and-program {
-  margin: 0 0 26px 0;
-
-  @media (min-width: $tablet-width) {
-    margin: 0 0 83px 0;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin: 0 0 71px 0;
-  }
-}
-
-.program-form-comment {
-  margin: 0 0 23px 0;
-
-  @media (min-width: $tablet-width) {
-    margin: 0 0 65px 0;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin: 0 0 67px 0;
-  }
-}
-
 .program-form__list {
   @include list-style-blocks;
   display: flex;
@@ -34,7 +10,7 @@
 }
 
 .program-form__list--program-name {
-  padding-bottom: 20px;
+  padding-bottom: 23px;
 
   @media (min-width: $tablet-width) {
     padding-bottom: 72px;
@@ -46,8 +22,7 @@
 }
 
 .program-form__list--filter {
-  padding: 30px 0 26px 0;
-  min-height: 157px;
+  padding: 29px 0 24px 0;
   border-top: 1px solid $simple-line-color;
   border-bottom: 1px solid $simple-line-color;
   box-sizing: border-box;
@@ -66,7 +41,7 @@
   position: relative;
   display: flex;
   align-items: center;
-  margin-bottom: 14px;
+  margin-bottom: 12px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 20px;
@@ -101,6 +76,18 @@
   padding: 13px 14px 14px 14px;
   border: 1px solid $form-border;
   box-sizing: border-box;
+
+  &:hover {
+    border-color: $input-hover;
+  }
+
+  &:focus {
+    border-color: $input-focus;
+  }
+
+  &:invalid {
+    border-color: $error;
+  }
 
   &::placeholder {
     color: $text-main-color;
@@ -139,7 +126,11 @@
 }
 
 .program-form__input-radio + label {
-  padding-left: 50px;
+  padding-left: 45px;
+
+  &:disabled {
+    opacity: 0.3;
+  }
 
   @media (min-width: $tablet-width) {
     padding-left: 60px;
@@ -156,6 +147,7 @@
   border: 1px solid $radio-border-grey;
   border-radius: 50%;
   box-sizing: border-box;
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
     width: 40px;
@@ -163,9 +155,23 @@
   }
 }
 
+.program-form__input-radio + label:hover::before,
+.program-form__input-radio + label:focus::before {
+  border-color: $radio-focus;
+}
+
+.program-form__input-radio:disabled + label::before,
+.program-form__input-radio:disabled + label {
+  opacity: 0.3;
+}
+
 .program-form__input-radio:checked + label::before {
   background-color: $apple-green;
   box-shadow: inset 0 0 0 8px $basic-white;
+
+  &:disabled {
+    opacity: 0.3;
+  }
 
   @media (min-width: $tablet-width) {
     box-shadow: inset 0 0 0 10px $basic-white;
@@ -189,6 +195,7 @@
   background-color: $basic-white;
   border: 1px solid $radio-border-grey;
   box-sizing: border-box;
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
     width: 40px;
@@ -210,6 +217,14 @@
   height: 20px;
   background: url("../img/icon_email.svg") no-repeat 50% 50%;
   transform: translateY(-50%);
+}
+
+.program-form__label--email:invalid::after {
+  background: url("../img/icon_email--error.svg") no-repeat 50% 50%;
+}
+
+.program-form__label--email:disabled::after {
+  background: url("../img/icon_email--valid.svg") no-repeat 50% 50%;
 }
 
 .program-form__label--phone::after {
