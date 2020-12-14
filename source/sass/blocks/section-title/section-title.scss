@@ -1,8 +1,40 @@
 .section-title {
+  position: relative;
   font-weight: 400;
   font-size: 24px;
+  line-height: 26px;
   font-family: "Oswald", "Arial", sans-serif;
   color: $basic-black;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 115%;
+    height: 2px;
+    width: 100vw;
+    background-color: $section-title-line;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 15px;
+      left: -64px;
+      height: 2px;
+      width: 29px;
+      background-color: $section-title-line;
+
+      @media (min-width: $desktop-width) {
+        left: -110px;
+        width: 75px;
+      }
+    }
+  }
 }
 
 .section-title--catalog {
@@ -11,6 +43,33 @@
 }
 
 .section-title--form-page {
+  margin-left: -4px;
   padding-bottom: 35px;
   line-height: 26px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 80px;
+  }
+}
+
+.section-title--form-page br {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.section-title--extra {
+  padding-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 68px;
+  }
+}
+
+.section-title--contacts {
+  padding-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 80px;
+  }
 }

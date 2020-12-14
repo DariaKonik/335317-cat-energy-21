@@ -1,0 +1,25 @@
+.program-form-contacts {
+  margin: 0 0 24px 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 70px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 73px 0;
+  }
+}
+
+.program-form-contacts .program-form__list {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 78px;
+  }
+}
+
+.program-form-contacts .program-form__option {
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
+}
