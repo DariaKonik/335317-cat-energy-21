@@ -6,6 +6,7 @@
   justify-content: space-between;
   align-items: center;
   background-color: transparent;
+  box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
     margin-top: 22px;
@@ -46,6 +47,8 @@
   }
 }
 
-.page-header--form {
+.page-header--form,
+.page-header--catalog {
   background: $basic-white;
+  border-bottom: 1px solid $simple-line-color;
 }

@@ -1,0 +1,34 @@
+.features-table {
+  margin-bottom: 22px;
+  font-size: 12px;
+  line-height: 16px;
+  border-collapse: collapse;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 33px;
+    font-size: 16px;
+    line-height: 16px;
+    width: 251px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 173px;
+  }
+}
+
+.features-table__description {
+  text-align: right;
+}
+
+.features-table td {
+  @media (min-width: $tablet-width) {
+    border-bottom: 1px solid $line-table-color;
+    padding: 8px 0;
+  }
+}
+
+.features-table--extra {
+  margin: 0 0 12px 0;
+  font-size: 14px;
+  line-height: 20px;
+}

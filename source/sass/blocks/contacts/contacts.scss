@@ -18,7 +18,7 @@
     padding: 62px 89px 59px 76px;
     width: 570px;
     box-sizing: border-box;
-    background-color: red;
+    background-color: $basic-white;
   }
 }
 
@@ -60,4 +60,8 @@
 
 .contacts--form {
   background-color: $frames-background;
+
+  @media (min-width: $desktop-width) {
+    background-color: $basic-white;
+  }
 }

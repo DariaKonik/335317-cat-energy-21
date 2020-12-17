@@ -1,75 +1,82 @@
 .section-title {
   position: relative;
+  z-index: 1;
   font-weight: 400;
   font-size: 24px;
   line-height: 26px;
   font-family: "Oswald", "Arial", sans-serif;
   color: $basic-black;
-
-  &::after {
-    content: "";
-    position: absolute;
-    top: 15px;
-    left: 115%;
-    height: 2px;
-    width: 100vw;
-    background-color: $section-title-line;
-  }
+  text-indent: 0;
 
   @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 36px;
+  }
 
-    &::before {
-      content: "";
-      position: absolute;
-      top: 15px;
-      left: -64px;
-      height: 2px;
-      width: 29px;
-      background-color: $section-title-line;
+  &::after {
+    content: "";
+    position: absolute;
+    z-index: 0;
+    top: 14px;
+    left: -20px;
+    height: 2px;
+    width: 100vw;
+    background-color: $section-title-line;
 
-      @media (min-width: $desktop-width) {
-        left: -110px;
-        width: 75px;
-      }
+    @media (min-width: $tablet-width) {
+      left: -69px;
+    }
+
+    @media (min-width: $desktop-width) {
+      left: -110px;
     }
   }
 }
 
+.section-title__text {
+  display: inline-block;
+  position: relative;
+  z-index: 2;
+  padding: 0 15px 0 19px;
+  background-color: $basic-white;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 42px 0 39px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 40px 0 40px;
+  }
+}
+
 .section-title--catalog {
-  padding-bottom: 48px;
+  margin-bottom: 48px;
   line-height: 24px;
 }
 
 .section-title--form-page {
   margin-left: -4px;
-  padding-bottom: 35px;
-  line-height: 26px;
+  margin-bottom: 35px;
+  width: 230px;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 80px;
-  }
-}
-
-.section-title--form-page br {
-  @media (min-width: $tablet-width) {
-    display: none;
+    margin-bottom: 80px;
+    width: auto;
   }
 }
 
 .section-title--extra {
-  padding-bottom: 40px;
+  margin-bottom: 40px;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 68px;
+    margin-bottom: 68px;
   }
 }
 
 .section-title--contacts {
-  padding-bottom: 35px;
+  margin-bottom: 35px;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 80px;
+    margin-bottom: 80px;
   }
 }

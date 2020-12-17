@@ -25,8 +25,17 @@
 }
 
 .button--show-all {
+  padding: 10px 20px;
+  width: 100%;
+  line-height: 20px;
+  font-size: 16px;
   color: $button-special-text-color;
   background-color: $button-special-background;
+  box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    width: 249px;
+  }
 }
 
 .button--promo {
@@ -61,5 +70,19 @@
 
   @media (min-width: $desktop-width) {
     width: 568px;
+  }
+}
+
+.button--order {
+  padding: 10px 20px;
+  font-size: 16px;
+  line-height: 20px;
+
+  @media (min-width: $tablet-width) {
+    width: 248px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 168px;
   }
 }
