@@ -18,7 +18,6 @@
     position: absolute;
     z-index: 0;
     top: 14px;
-    left: -20px;
     height: 2px;
     width: 100vw;
     background-color: $section-title-line;
@@ -55,13 +54,18 @@
 }
 
 .section-title--form-page {
-  margin-left: -4px;
+  margin-left: -24px;
   margin-bottom: 35px;
   width: 230px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 80px;
+    margin-left: -41px;
+    margin-bottom: 75px;
     width: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: -43px;
   }
 }
 
@@ -71,12 +75,16 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 68px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 61px;
+  }
 }
 
 .section-title--contacts {
   margin-bottom: 35px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 80px;
+    margin-bottom: 73px;
   }
 }
