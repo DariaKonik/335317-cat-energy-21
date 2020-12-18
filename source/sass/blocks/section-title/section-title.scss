@@ -18,6 +18,7 @@
     position: absolute;
     z-index: 0;
     top: 14px;
+    left: 0;
     height: 2px;
     width: 100vw;
     background-color: $section-title-line;
@@ -36,7 +37,7 @@
   display: inline-block;
   position: relative;
   z-index: 2;
-  padding: 0 15px 0 19px;
+  padding: 0 15px 0 0;
   background-color: $basic-white;
 
   @media (min-width: $tablet-width) {

@@ -1,11 +1,7 @@
 .extra-catalog {
-  padding-top: 28px;
+  padding-top: 5px;
 }
 
 .extra-catalog__list {
   @include list-style-blocks;
-}
-
-.extra-catalog__item {
-  padding-bottom: 29px;
 }
