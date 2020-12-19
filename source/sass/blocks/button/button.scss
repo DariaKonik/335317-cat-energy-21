@@ -36,6 +36,10 @@
   @media (min-width: $tablet-width) {
     width: 249px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 169px;
+  }
 }
 
 .button--promo {
@@ -77,9 +81,11 @@
   padding: 10px 20px;
   font-size: 16px;
   line-height: 20px;
+  box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
     width: 248px;
+    padding: 9px 20px;
   }
 
   @media (min-width: $desktop-width) {

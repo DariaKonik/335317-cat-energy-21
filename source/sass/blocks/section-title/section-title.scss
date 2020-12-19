@@ -50,8 +50,16 @@
 }
 
 .section-title--catalog {
-  margin-bottom: 48px;
+  padding-top: 4px;
   line-height: 24px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: -43px;
+  }
 }
 
 .section-title--form-page {
