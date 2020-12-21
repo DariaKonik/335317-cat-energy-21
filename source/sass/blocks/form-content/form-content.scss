@@ -26,13 +26,15 @@
 
 .form-content__subtitle {
   margin-bottom: 39px;
+  max-width: 250px;
   font-family: "Oswald", "Arial", sans-serif;
   color: $basic-black;
   text-transform: uppercase;
 
+
   @media (min-width: $tablet-width) {
     margin-bottom: 66px;
-    max-width: 400px;
+    max-width: 323px;
     font-size: 20px;
     line-height: 30px;
   }

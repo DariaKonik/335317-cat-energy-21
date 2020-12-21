@@ -51,4 +51,8 @@
 .page-header--catalog {
   background: $basic-white;
   border-bottom: 1px solid $simple-line-color;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
 }

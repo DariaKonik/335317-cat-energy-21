@@ -49,15 +49,3 @@
     height: 289px;
   }
 }
-
-.catalog-content__section-title {
-  margin-bottom: 35px;
-
-  @media (min-width: $tablet-width) {
-    margin-bottom: 86px;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-top: 0;
-  }
-}
