@@ -1,6 +1,14 @@
 .program-form__item {
-  padding: 0;
+  padding: $min-page-padding;
   border: none;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 70px 0 69px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: $desktop-min-padding;
+  }
 }
 
 .program-form__list {
@@ -257,14 +265,19 @@
 }
 
 .program-form__footer {
+  padding: $min-page-padding;
+  text-align: center;
+
   @media (min-width: $tablet-width) {
     display: flex;
     align-items: center;
     margin-bottom: 72px;
+    padding: $tablet-min-padding;
   }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 82px;
+    padding: $desktop-min-padding;
   }
 }
 

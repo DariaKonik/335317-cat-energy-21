@@ -1,22 +1,30 @@
+.heder-wrapper {
+  width: 100%;
+}
+
 .section-title {
   position: relative;
   margin-top: 0;
   margin-bottom: 35px;
-  width: 100vw;
+  padding-left: 20px;
+  width: 100%;
   font-weight: 400;
   font-size: 24px;
   line-height: 26px;
   font-family: "Oswald", "Arial", sans-serif;
   color: $basic-black;
+  box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 86px;
     font-size: 36px;
     line-height: 36px;
+    padding-left: 30px;
   }
 
   @media (min-width: $desktop-width) {
     margin-top: 0;
+    padding-left: 110px;
   }
 
   &::after {
@@ -24,19 +32,17 @@
     position: absolute;
     z-index: 0;
     top: 14px;
-    left: -22px;
-    width: 100vw;
+    left: 0;
+    width: 100%;
     height: 2px;
     background-color: $section-title-line;
 
     @media (min-width: $tablet-width) {
       top: 23px;
-      left: -66px;
     }
 
     @media (min-width: $desktop-width) {
       top: 20px;
-      left: -110px;
     }
   }
 }
@@ -58,24 +64,27 @@
 .section-title__text {
   display: inline-block;
   position: relative;
+  left: -20px;
   z-index: 1;
   padding: 0 22px 0 20px;
   background-color: $basic-white;
 
   @media (min-width: $tablet-width) {
+    left: 0;
     padding: 0 39px 0 42px;
   }
 
   @media (min-width: $desktop-width) {
+    left: -40px;
     padding: 0 40px 0 40px;
   }
 }
 
+.section-title--catalog {
+  grid-column: 1/-1;
+}
+
 .section-title--catalog .section-title__text {
-  padding: 0 22px 0 20px;
-  left: -20px;
-
-
   @media (min-width: $tablet-width) {
     padding: 0 37px 0 36px;
   }
@@ -87,15 +96,9 @@
 
 .section-title--form-page {
   margin-bottom: 35px;
-  width: 225px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 75px;
-    width: 100%;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 100%;
   }
 }
 
@@ -116,5 +119,21 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 73px;
+  }
+}
+
+.section-title--contacts .section-title__text {
+  @media (max-width: $tablet-width - 1) {
+
+    &::before {
+    content: "";
+    position: absolute;
+    z-index: 0;
+    top: 14px;
+    left: 220px;
+    width: 100%;
+    height: 2px;
+    background-color: $section-title-line;
+    }
   }
 }
