@@ -5,7 +5,7 @@
 .section-title {
   position: relative;
   margin-top: 0;
-  margin-bottom: 35px;
+  margin-bottom: 10px;
   padding-left: 20px;
   width: 100%;
   font-weight: 400;
@@ -48,7 +48,12 @@
 }
 
 .section-title--catalog {
+  grid-column: 1/-1;
   line-height: 24px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 83px;
+  }
 
   &::after {
     @media (min-width: $tablet-width) {
@@ -78,10 +83,6 @@
     left: -40px;
     padding: 0 40px 0 40px;
   }
-}
-
-.section-title--catalog {
-  grid-column: 1/-1;
 }
 
 .section-title--catalog .section-title__text {
@@ -124,16 +125,15 @@
 
 .section-title--contacts .section-title__text {
   @media (max-width: $tablet-width - 1) {
-
     &::before {
-    content: "";
-    position: absolute;
-    z-index: 0;
-    top: 14px;
-    left: 220px;
-    width: 100%;
-    height: 2px;
-    background-color: $section-title-line;
+      content: "";
+      position: absolute;
+      z-index: 0;
+      top: 14px;
+      right: 0;
+      width: 80px;
+      height: 2px;
+      background-color: $section-title-line;
     }
   }
 }

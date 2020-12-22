@@ -1,5 +1,6 @@
 .program-form__item {
-  padding: $min-page-padding;
+  margin: 0;
+  padding: 0;
   border: none;
 
   @media (min-width: $tablet-width) {
@@ -7,7 +8,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: $desktop-min-padding;
+    padding: $desktop-min-padding-double;
   }
 }
 
@@ -15,7 +16,13 @@
   @include list-style-blocks;
   display: flex;
   flex-direction: column;
+  padding: $min-page-padding;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
 }
+
 
 .program-form__list--program-name {
   padding-bottom: 23px;
@@ -30,7 +37,7 @@
 }
 
 .program-form__list--filter {
-  padding: 29px 0 24px 0;
+  padding: 29px 20px 24px 21px;
   border-top: 1px solid $simple-line-color;
   border-bottom: 1px solid $simple-line-color;
   box-sizing: border-box;
@@ -272,12 +279,12 @@
     display: flex;
     align-items: center;
     margin-bottom: 72px;
-    padding: $tablet-min-padding;
+    padding: 0 69px 0 70px;
   }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 82px;
-    padding: $desktop-min-padding;
+    padding: $desktop-min-padding-double;
   }
 }
 
@@ -296,5 +303,21 @@
 
   @media (min-width: $desktop-width) {
     margin-left: 81px;
+  }
+}
+
+.program-form__h3 {
+  @media (max-width: $tablet-width - 1) {
+    margin-top: 20px;
+    margin-bottom: 31px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-top: 12px;
+    margin-left: 63px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-left: 82px;
   }
 }

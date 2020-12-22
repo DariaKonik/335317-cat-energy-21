@@ -31,7 +31,6 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
-    padding-top: 3px;
     font-size: 20px;
     line-height: 25px;
   }
@@ -39,6 +38,7 @@
 
 .contacts__text {
   margin: 0;
+  padding-top: 3px;
   line-height: 20px;
 
   @media (min-width: $tablet-width) {

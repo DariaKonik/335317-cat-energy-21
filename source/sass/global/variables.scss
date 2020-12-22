@@ -1,9 +1,11 @@
 $min-page-padding: 0 20px 0 21px;
 $tablet-min-padding: 0 29px 0 30px;
-$desktop-min-padding: 0 110px 0 110px;
+$desktop-min-padding-double: 0 110px 0 110px;
 $min-page-margin-top: 12px;
 $header-min-height: 65px;
 $toggle-shadow: 0 1px 3px rgba(0, 0, 0, 0.16);
+$desktop-min-padding: 110px;
+
 
 @mixin section-margins {
   padding: $min-page-padding;

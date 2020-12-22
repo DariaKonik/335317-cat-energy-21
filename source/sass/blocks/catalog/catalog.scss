@@ -1,5 +1,5 @@
 .catalog {
-  padding: 41px 20px 0 21px;
+  padding: 41px 0 0 0;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 72px;
@@ -26,7 +26,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     column-gap: 80px;
-    row-gap: 68px;
+    row-gap: 72px;
   }
 }
 

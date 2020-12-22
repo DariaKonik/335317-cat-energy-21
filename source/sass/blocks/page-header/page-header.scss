@@ -17,7 +17,7 @@
 
   @media (min-width: $desktop-width) {
     margin-top: 50px;
-    padding: $desktop-min-padding;
+    padding: $desktop-min-padding-double;
     background: linear-gradient(90deg, $basic-white 50%, $background-green 50%), url("../img/index-background-desktop-1.jpg");
     background-repeat: no-repeat, no-repeat;
     background-position: 100% 6%, 100% 6%;

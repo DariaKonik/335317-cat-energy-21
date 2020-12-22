@@ -2,13 +2,13 @@
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 1fr auto;
-    column-gap: 79px;
+    column-gap: 51px;
     margin-bottom: 86px;
   }
 }
 
 .catalog-content__extra-catalog {
-  margin-bottom: 39px;
+  margin-bottom: 36px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 69px;
@@ -25,7 +25,6 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 76px;
-    width: 100%;
     height: 200px;
     background-color: $apple-green;
   }
