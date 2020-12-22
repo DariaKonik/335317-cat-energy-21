@@ -50,9 +50,11 @@
 .section-title--catalog {
   grid-column: 1/-1;
   line-height: 24px;
+  margin-top: 25px;
 
   @media (min-width: $desktop-width) {
     margin-bottom: 83px;
+    margin-top: 0;
   }
 
   &::after {
