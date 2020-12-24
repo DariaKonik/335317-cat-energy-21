@@ -18,17 +18,31 @@
   }
 }
 
-.button--order {
+.button--order,
+.button--promo,
+.button--program-form {
   @include green-button;
 }
 
 .button--show-all {
+  padding: 10px 20px;
+  width: 100%;
+  line-height: 20px;
+  font-size: 16px;
   color: $button-special-text-color;
   background-color: $button-special-background;
+  box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    width: 249px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 169px;
+  }
 }
 
 .button--promo {
-  @include green-button;
   padding: 11px 44px 12px 44px;
 
   @media (min-width: $tablet-width) {
@@ -36,11 +50,45 @@
     margin-left: -5px;
     padding: 16px 20px 16px 20px;
     width: 244px;
-    min-height: 54px;
     box-sizing: border-box;
   }
 
   @media (min-width: $desktop-width) {
     margin-left: 0;
+  }
+}
+
+.button--program-form {
+  padding: 10px 44px 10px 44px;
+  width: 100%;
+  font-size: 16px;
+  line-height: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 16px 20px 16px 20px;
+    width: 282px;
+    font-size: 20px;
+    box-sizing: border-box;
+  }
+
+
+  @media (min-width: $desktop-width) {
+    width: 568px;
+  }
+}
+
+.button--order {
+  padding: 10px 20px;
+  font-size: 16px;
+  line-height: 20px;
+  box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    width: 248px;
+    padding: 10px 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 168px;
   }
 }

@@ -1,21 +1,41 @@
-.form-content {
-  padding: $min-page-padding;
-  padding-bottom: 32px;
+.form-content__title {
+  margin-bottom: 37px;
+  padding-left: 20px;
+  padding-right: 20px;
 
   @media (min-width: $tablet-width) {
-    padding: $tablet-min-padding;
+    margin-bottom: 54px;
+    padding-left: 70px;
+    padding-right: 69px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: $desktop-min-padding;
+    margin-bottom: 56px;
+    padding-left: 110px;
+    padding-right: 110px;
   }
 }
 
+
 .form-content__subtitle {
-  margin-bottom: 19px;
+  margin-bottom: 39px;
+  padding: $min-page-padding;
+  max-width: 250px;
   font-family: "Oswald", "Arial", sans-serif;
   color: $basic-black;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 66px;
+    padding: 0 70px 0 69px;
+    max-width: 323px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: $desktop-min-padding-double;
+  }
 }
 
 .form-content__program-form {

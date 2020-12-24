@@ -1,11 +1,15 @@
 .extra-catalog {
-  padding-top: 28px;
+  padding: 27px 20px 0 21px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 29px 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 5px 0 0 110px;
+  }
 }
 
 .extra-catalog__list {
   @include list-style-blocks;
-}
-
-.extra-catalog__item {
-  padding-bottom: 29px;
 }

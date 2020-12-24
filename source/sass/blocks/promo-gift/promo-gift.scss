@@ -1,10 +1,61 @@
 .promo-gift {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  margin-right: 20px;
+  margin-left: 21px;
+  padding: 41px 0 0 0;
   background-image: url("../img/gift-photo.jpg");
   background-repeat: no-repeat, no-repeat;
+  text-align: center;
+  box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    justify-items: center;
+    margin-right: 30px;
+    margin-left: 29px;
+    padding: 0 34px 0 80px;
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: auto;
+    text-align: center;
+    padding: 37px 0 0 0;
+    margin-right: 110px;
+  }
 }
 
 .promo-gift__text {
+  padding-top: 20px;
+  width: 161px;
   font-size: 16px;
   line-height: 20px;
   color: $basic-white;
+  align-self: start;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+    width: 161px;
+    align-self: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    align-self: start;
+    margin: 0;
+    padding-top: 30px;
+  }
+}
+
+.promo-gift__image {
+  @media (min-width: $tablet-width) {
+    justify-self: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-self: center;
+  }
 }

@@ -7,7 +7,7 @@
 
   @media (min-width: $tablet-width) {
     grid-column-gap: 295px;
-    padding: 67px 72px 58px 71px;
+    padding: 62px 72px 58px 71px;
   }
 
   @media (min-width: $desktop-width) {
@@ -18,6 +18,7 @@
     padding: 62px 89px 59px 76px;
     width: 570px;
     box-sizing: border-box;
+    background-color: $basic-white;
   }
 }
 
@@ -37,6 +38,7 @@
 
 .contacts__text {
   margin: 0;
+  padding-top: 3px;
   line-height: 20px;
 
   @media (min-width: $tablet-width) {
@@ -53,5 +55,13 @@
   @media (min-width: $tablet-width) {
     display: inline-block;
     margin-top: 20px;
+  }
+}
+
+.contacts--inner {
+  background-color: $frames-background;
+
+  @media (min-width: $desktop-width) {
+    background-color: $basic-white;
   }
 }

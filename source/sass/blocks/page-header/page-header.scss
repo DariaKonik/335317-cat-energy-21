@@ -6,6 +6,7 @@
   justify-content: space-between;
   align-items: center;
   background-color: transparent;
+  box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
     margin-top: 22px;
@@ -16,7 +17,7 @@
 
   @media (min-width: $desktop-width) {
     margin-top: 50px;
-    padding: $desktop-min-padding;
+    padding: $desktop-min-padding-double;
     background: linear-gradient(90deg, $basic-white 50%, $background-green 50%), url("../img/index-background-desktop-1.jpg");
     background-repeat: no-repeat, no-repeat;
     background-position: 100% 6%, 100% 6%;
@@ -43,5 +44,15 @@
 
   @media (min-width: $desktop-width) {
     display: block;
+  }
+}
+
+.page-header--form,
+.page-header--catalog {
+  background: $basic-white;
+  border-bottom: 1px solid $simple-line-color;
+
+  @media (min-width: $tablet-width) {
+    border: none;
   }
 }

@@ -38,8 +38,9 @@
   @media (max-width: $mobile-width-only) {
     display: flex;
     align-content: center;
-    min-height: 97px;
+    min-height: 95px;
     border-bottom: 1px solid $simple-line-color;
+    box-sizing: border-box;
   }
 }
 
@@ -50,6 +51,7 @@
     width: 100%;
     min-height: 63px;
     border-bottom: 1px solid $simple-line-color;
+    box-sizing: border-box;
   }
 }
 
@@ -62,13 +64,15 @@
   }
 
   @media (max-width: $mobile-width-only) {
-    min-height: 78px;
+    min-height: 75px;
+    box-sizing: border-box;
   }
 }
 
 .page-footer__logo-text {
   display: block;
   margin: auto;
+  padding-top: 5px;
 
   &:hover,
   &:focus {
@@ -79,11 +83,8 @@
     opacity: 0.6;
   }
 
-  @media (max-width: $mobile-width-only) {
-    padding-top: 3px;
-  }
-
   @media (min-width: $tablet-width) {
     margin: 0;
+    padding-top: 5px;
   }
 }
