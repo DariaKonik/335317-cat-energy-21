@@ -10,17 +10,17 @@
 
   @media (max-width: $tablet-width - 1px) {
     &::after {
-    content: "";
-    position: absolute;
-    z-index: -2;
-    top: 66px;
-    right: 0;
-    width: 100%;
-    height: 302px;
-    background: linear-gradient(180deg, $background-green 50%, $background-green 50%), url("../img/index-background-mobile.jpg");
-    background-repeat: no-repeat, no-repeat;
-    background-size: contain;
-    background-position: center;
+      content: "";
+      position: absolute;
+      z-index: -2;
+      top: 66px;
+      right: 0;
+      width: 100%;
+      height: 302px;
+      background: linear-gradient(180deg, $background-green 50%, $background-green 50%), url("../img/index-background-mobile.jpg");
+      background-repeat: no-repeat, no-repeat;
+      background-size: contain;
+      background-position: center;
     }
   }
 
