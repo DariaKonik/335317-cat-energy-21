@@ -13,12 +13,12 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    padding-top: 22px;
+    padding-top: 37px;
     min-width: 440px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 50px;
+    padding-top: 60px;
     min-width: 478px;
   }
 }
@@ -97,46 +97,17 @@
   cursor: pointer;
 
   @media (min-width: $tablet-width) {
-    padding: 20px 0;
+    padding: 0 0 5px 0;
   }
 }
 
-.main-nav__link--active {
-  position: relative;
-
+.main-nav__item--active {
   @media (min-width: $tablet-width) {
-    &::after {
-      content: "";
-      position: absolute;
-      top: 32px;
-      left: 50%;
-      width: 264%;
-      height: 2px;
-      background-color: $hover-line;
-      transform: translateX(-50%);
-    }
+    border-bottom: 2px solid $hover-line;
   }
 
   @media (min-width: $desktop-width) {
-    &::after {
-      content: "";
-      top: 35px;
-      left: 50%;
-      position: absolute;
-      width: 100%;
-      height: 2px;
-      background-color: $basic-white;
-      transform: translateX(-50%);
-    }
-  }
-}
-
-.main-nav__list--form .main-nav__link--active,
-.main-nav--catalog .main-nav__link--active {
-  @media (min-width: $desktop-width) {
-    &::after {
-      background-color: $hover-line;
-    }
+    border-bottom: 2px solid $basic-white;
   }
 }
 
