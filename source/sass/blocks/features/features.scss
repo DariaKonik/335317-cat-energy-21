@@ -19,7 +19,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: $desktop-min-padding;
+    padding: $desktop-min-padding-double;
   }
 }
 
@@ -30,7 +30,7 @@
 .features__list {
   @include list-style-blocks;
   display: grid;
-  grid-row-gap: 28px;
+  grid-row-gap: 27px;
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 1fr 1fr;

@@ -6,12 +6,12 @@
 
   @media (min-width: $tablet-width) {
     padding: $tablet-min-padding;
-    padding-bottom: 64px;
+    padding-bottom: 75px;
     background: linear-gradient(to bottom, $basic-white 55%, $results-background 55%);
   }
 
   @media (min-width: $desktop-width) {
-    padding: $desktop-min-padding;
+    padding: $desktop-min-padding-double;
     padding-bottom: 67px;
     background: linear-gradient(to bottom, $basic-white 30%, $results-background 30%);
   }
@@ -38,7 +38,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 58px;
+    padding-top: 60px;
     margin-bottom: 146px;
   }
 }
@@ -156,7 +156,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 60px;
+    margin-top: 55px;
   }
 }
 
@@ -168,7 +168,6 @@
 
 .results__slider {
   @media (min-width: $tablet-width) {
-    margin-top: 59px;
     align-self: center;
   }
 
@@ -178,17 +177,24 @@
 }
 
 .results__image {
-  object-fit: contain;
-  object-position: -20px 0;
+  object-fit: cover;
+  margin-left: -5px;
+  width: 311px;
+  height: 232px;
 
   @media (min-width: $tablet-width) {
-    width: 476px;
-    height: 550px;
+    object-fit: contain;
+    object-position: -50px 65px;
+    z-index: -1;
+    margin-left: -21px;
+    width: 354px;
+    height: 620px;
   }
 
   @media (min-width: $desktop-width) {
-    object-position: -20px -58px;
-    width: 485px;
-    height: 517px - 58px;
+    object-position: 0px 0px;
+    margin-left: 0;
+    width: 405px;
+    height: 536px;
   }
 }
