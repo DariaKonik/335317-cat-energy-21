@@ -8,6 +8,31 @@
   background-color: transparent;
   box-sizing: border-box;
 
+  @media (max-width: $tablet-width - 1px) {
+    &::after {
+    content: "";
+    position: absolute;
+    z-index: -2;
+    top: 66px;
+    right: 0;
+    width: 100%;
+    height: 302px;
+    background: linear-gradient(180deg, $background-green 50%, $background-green 50%), url("../img/index-background-mobile.jpg");
+    background-repeat: no-repeat, no-repeat;
+    background-size: contain;
+    background-position: center;
+    }
+  }
+
+  @media (max-width: $tablet-width - 1px) and (min-resolution: 2dppx) {
+    &::after {
+      background: linear-gradient(180deg, $background-green 50%, $background-green 50%), url("../img/index-background-mobile@2x.jpg");
+      background-repeat: no-repeat, no-repeat;
+      background-size: contain;
+      background-position: center;
+    }
+  }
+
   @media (min-width: $tablet-width) {
     padding: $tablet-min-padding;
     grid-gap: 40px;
@@ -16,16 +41,29 @@
 
   @media (min-width: $desktop-width) {
     padding: $desktop-min-padding-double;
-    background: linear-gradient(90deg, $basic-white 50%, $background-green 50%), url("../img/index-background-desktop-1.jpg");
-    background-repeat: no-repeat, no-repeat;
-    background-position: 180% 9%, 180% 9%;
+
+    &::after {
+      content: "";
+      position: absolute;
+      z-index: -2;
+      top: 0;
+      right: 0;
+      width: 50vw;
+      height: 694px;
+      background: linear-gradient(90deg, $background-green 50%, $background-green 50%), url("../img/index-background-desktop-1.jpg");
+      background-repeat: no-repeat, no-repeat;
+      background-size: cover;
+      background-position: 0 0;
+    }
   }
 
-  @media (min-resolution: 2dppx) and (min-width: $desktop-width) {
-    background: linear-gradient(90deg, $basic-white 50%, $background-green 50%), url("../img/index-background-desktop@2x.jpg");
-    background-repeat: no-repeat, no-repeat;
-    background-size: 1440px auto, auto 700px;
-    background-position: 100% 2%, 184% -4px;
+  @media (min-width: $desktop-width) and (min-resolution: 2dppx) {
+    &::after {
+      background: linear-gradient(90deg, $background-green 50%, $background-green 50%), url("../img/index-background-desktop@2x.jpg");
+      background-repeat: no-repeat, no-repeat;
+      background-size: cover;
+      background-position: 0 0;
+    }
   }
 }
 
