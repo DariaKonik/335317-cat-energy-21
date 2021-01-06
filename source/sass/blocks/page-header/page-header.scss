@@ -8,42 +8,85 @@
   background-color: transparent;
   box-sizing: border-box;
 
+  @media (max-width: $tablet-width - 1px) {
+    &::after {
+      content: "";
+      position: absolute;
+      z-index: -2;
+      top: 66px;
+      right: 0;
+      width: 100%;
+      height: 302px;
+      background: linear-gradient(180deg, $background-green 50%, $background-green 50%), url("../img/index-background-mobile.jpg");
+      background-repeat: no-repeat, no-repeat;
+      background-size: contain;
+      background-position: center;
+    }
+  }
+
+  @media (max-width: $tablet-width - 1px) and (min-resolution: 2dppx) {
+    &::after {
+      background: linear-gradient(180deg, $background-green 50%, $background-green 50%), url("../img/index-background-mobile@2x.jpg");
+      background-repeat: no-repeat, no-repeat;
+      background-size: contain;
+      background-position: center;
+    }
+  }
+
   @media (min-width: $tablet-width) {
-    margin-top: 22px;
     padding: $tablet-min-padding;
     grid-gap: 40px;
-    grid-template-columns: 174px auto;
+    grid-template-columns: auto auto;
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 50px;
     padding: $desktop-min-padding-double;
-    background: linear-gradient(90deg, $basic-white 50%, $background-green 50%), url("../img/index-background-desktop-1.jpg");
-    background-repeat: no-repeat, no-repeat;
-    background-position: 100% 6%, 100% 6%;
+
+    &::after {
+      content: "";
+      position: absolute;
+      z-index: -2;
+      top: 0;
+      right: 0;
+      width: 50vw;
+      height: 694px;
+      background: linear-gradient(90deg, $background-green 50%, $background-green 50%), url("../img/index-background-desktop-1.jpg");
+      background-repeat: no-repeat, no-repeat;
+      background-size: cover;
+      background-position: 0 0;
+    }
+  }
+
+  @media (min-width: $desktop-width) and (min-resolution: 2dppx) {
+    &::after {
+      background: linear-gradient(90deg, $background-green 50%, $background-green 50%), url("../img/index-background-desktop@2x.jpg");
+      background-repeat: no-repeat, no-repeat;
+      background-size: cover;
+      background-position: 0 0;
+    }
   }
 }
 
-.page-header__logo-img,
-.page-header__logo-text {
+.page-header__logo-picture {
   @media (min-width: $tablet-width) {
     display: none;
   }
 }
 
-.page-header__logo-middle {
-  display: none;
+.page-header__logo img {
+  width: 101px;
+  height: 18px;
 
-  @include tablet-only () {
-    display: block;
+  @media (min-width: 768px) {
+    padding-top: 22px;
+    width: 174px;
+    height: 52px;
   }
-}
 
-.page-header__logo-big {
-  display: none;
-
-  @media (min-width: $desktop-width) {
-    display: block;
+  @media (min-width: 1440px) {
+    padding-top: 50px;
+    width: 202px;
+    height: 59px;
   }
 }
 

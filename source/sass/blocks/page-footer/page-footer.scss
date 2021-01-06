@@ -15,7 +15,8 @@
   @media (min-width: $tablet-width) {
     padding: 55px 30px 61px 30px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: start;
   }
 
   @media (min-width: $desktop-width) {

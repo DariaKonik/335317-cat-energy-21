@@ -5,10 +5,6 @@
   justify-content: space-between;
   margin: auto;
   width: 130px;
-
-  @media (min-width: $tablet-width) {
-    width: 129px;
-  }
 }
 
 .social__link svg {
@@ -25,7 +21,29 @@
   }
 }
 
+.social__link--vkontakte svg {
+  width: 23px;
+  height: 16px;
+
+  @media (min-width: $tablet-width) {
+    width: 30px;
+    height: 22px;
+  }
+}
+
+.social__link--instagram svg {
+  width: 16px;
+  height: 16px;
+
+  @media (min-width: $tablet-width) {
+    width: 23px;
+    height: 23px;
+  }
+}
+
 .social__link--facebook svg {
+  width: 22px;
+  height: 22px;
   fill: none;
   stroke: $dove-grey;
 
@@ -38,5 +56,10 @@
   &:active {
     stroke: $footer-green-hover;
     opacity: 0.3;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 28px;
+    height: 33px;
   }
 }

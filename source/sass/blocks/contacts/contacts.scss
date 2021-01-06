@@ -7,11 +7,11 @@
 
   @media (min-width: $tablet-width) {
     grid-column-gap: 295px;
-    padding: 62px 72px 58px 71px;
+    padding: 62px 72px 59px 71px;
   }
 
   @media (min-width: $desktop-width) {
-    grid-column-gap: 87px;
+    grid-column-gap: 95px;
     position: absolute;
     top: 95px;
     left: 110px;
@@ -38,7 +38,6 @@
 
 .contacts__text {
   margin: 0;
-  padding-top: 3px;
   line-height: 20px;
 
   @media (min-width: $tablet-width) {
