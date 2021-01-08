@@ -19,7 +19,7 @@
       height: 302px;
       background: linear-gradient(180deg, $background-green 50%, $background-green 50%), url("../img/index-background-mobile.jpg");
       background-repeat: no-repeat, no-repeat;
-      background-size: contain;
+      background-size: cover;
       background-position: center;
     }
   }
@@ -28,7 +28,7 @@
     &::after {
       background: linear-gradient(180deg, $background-green 50%, $background-green 50%), url("../img/index-background-mobile@2x.jpg");
       background-repeat: no-repeat, no-repeat;
-      background-size: contain;
+      background-size: cover;
       background-position: center;
     }
   }
