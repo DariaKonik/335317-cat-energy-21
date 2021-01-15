@@ -257,6 +257,14 @@
   transform: translateY(-50%);
 }
 
+.program-form__email-svg {
+  stroke: $extra-black;
+}
+
+.program-form__phone-svg {
+  fill: $extra-black;
+}
+
 .program-form__input--phone:hover + svg,
 .program-form__input--email:hover + svg {
   filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
