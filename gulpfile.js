@@ -10,7 +10,7 @@ const imagemin = require("gulp-imagemin");
 const webp = require("gulp-webp");
 const rename = require("gulp-rename");
 const svgstore = require("gulp-svgstore");
-const uglify = require("gulp-uglify-es");
+const uglify = require("gulp-uglify-es").default;
 const del = require("del");
 
 
@@ -142,6 +142,7 @@ const build = gulp.series(
   gulp.parallel(
     styles,
     html,
+    scripts,
     copy,
     sprite,
     images,
@@ -155,6 +156,7 @@ exports.default = gulp.series(
   gulp.parallel(
     styles,
     html,
+    scripts,
     copy,
     sprite,
     createWebp,
