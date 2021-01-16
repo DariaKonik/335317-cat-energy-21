@@ -47,8 +47,7 @@
   color: $basic-black;
   text-transform: uppercase;
 
-  &:hover,
-  &:focus {
+  &:active {
     opacity: 0.3;
   }
 

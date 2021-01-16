@@ -33,15 +33,10 @@
   color: $basic-white;
 
   @media (min-width: $tablet-width) {
+    width: 414px;
     color: $basic-black;
     font-size: 60px;
     line-height: 60px;
-  }
-}
-
-.promo__title br {
-  @media (max-width: $mobile-width-only) {
-    display: none;
   }
 }
 
