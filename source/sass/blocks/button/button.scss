@@ -40,6 +40,15 @@
   @media (min-width: $desktop-width) {
     width: 169px;
   }
+
+  &:hover {
+   background-color: $button-special-background-hover;
+  }
+
+  &:active {
+    background-color: $button-special-background-hover;
+    color: $opacity-grey;
+  }
 }
 
 .button--promo {

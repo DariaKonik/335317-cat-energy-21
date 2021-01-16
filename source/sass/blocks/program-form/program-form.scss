@@ -238,6 +238,16 @@
   background: url("../img/tick.svg") no-repeat 50% 50%;
 }
 
+.program-form__input-checkbox + label:hover::before,
+.program-form__input-checkbox + label:focus::before {
+  border-color: $radio-focus;
+}
+
+.program-form__input-checkbox:disabled + label::before,
+.program-form__input-checkbox:disabled + label {
+  opacity: 0.3;
+}
+
 .program-form__option-container {
   flex-grow: 1;
   display: flex;
