@@ -26,12 +26,12 @@
 
   @media (min-width: $tablet-width) {
     min-height: 372px;
-    padding: 77px 62px 53px 52px;
+    padding: 80px 62px 53px 52px;
   }
 
   @media (min-width: $desktop-width) {
     min-height: 374px;
-    padding: 77px 51px 55px 52px;
+    padding: 78px 51px 55px 52px;
   }
 }
 
@@ -47,8 +47,7 @@
   color: $basic-black;
   text-transform: uppercase;
 
-  &:hover,
-  &:focus {
+  &:active {
     opacity: 0.3;
   }
 
@@ -61,6 +60,11 @@
     height: 20px;
     background: url("../img/arrow.svg") no-repeat 50% 50%;
     transform: translateY(-50%);
+    right: -5px;
+
+    @media (min-width: $desktop-width) {
+      right: -9px;
+    }
   }
 
   @media (min-width: $tablet-width) {
