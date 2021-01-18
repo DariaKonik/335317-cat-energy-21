@@ -55,7 +55,7 @@
   align-self: start;
 
   @media (min-width: $tablet-width) {
-    padding-top: 0;
+    padding-top: 5px;
     width: 161px;
     align-self: center;
   }
@@ -63,13 +63,14 @@
   @media (min-width: $desktop-width) {
     align-self: start;
     margin: 0;
-    padding-top: 30px;
+    padding-top: 25px;
   }
 }
 
 .promo-gift__image {
   @media (min-width: $tablet-width) {
     justify-self: left;
+    margin-bottom: 5px;
   }
 
   @media (min-width: $desktop-width) {
