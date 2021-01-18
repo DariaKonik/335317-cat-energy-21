@@ -5,6 +5,11 @@
   justify-content: space-between;
   margin: auto;
   width: 130px;
+
+  @media (min-width: $tablet-width) {
+    margin: auto 0;
+    width: 125px;
+  }
 }
 
 .social__link svg {
@@ -59,7 +64,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    width: 28px;
-    height: 33px;
+    width: 20px;
+    height: 29px;
   }
 }
