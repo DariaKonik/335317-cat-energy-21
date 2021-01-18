@@ -36,7 +36,7 @@
 .product--extra {
   display: grid;
   grid-template-columns: 1fr;
-  padding: 12px 0 18px 0;
+  padding: 13px 0 17px 0;
   width: auto;
   background: $basic-white;
   box-sizing: border-box;
@@ -98,7 +98,7 @@
 
 .product__title {
   margin-top: 0;
-  margin-bottom: 12px;
+  margin-bottom: 14px;
   width: 80px;
   font-weight: 400;
   font-size: 16px;
@@ -108,7 +108,7 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 13px;
+    margin-bottom: 12px;
     width: 145px;
     font-size: 20px;
     line-height: 24px;
