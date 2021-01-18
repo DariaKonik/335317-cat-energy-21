@@ -1,14 +1,17 @@
-  var navMain = document.querySelector('.main-nav');
-  var navToggle = document.querySelector('.main-nav__toggle');
+  var navMain = document.querySelector(".main-nav");
+  var navToggle = document.querySelector(".main-nav__toggle");
+  const mapOffice = document.querySelector("iframe.contacts__map");
 
-  navMain.classList.remove('main-nav--nojs');
+  mapOffice.style.display = "block";
 
-  navToggle.addEventListener('click', function() {
-    if (navMain.classList.contains('main-nav--closed')) {
-      navMain.classList.remove('main-nav--closed');
-      navMain.classList.add('main-nav--opened');
+  navMain.classList.remove("main-nav--nojs");
+
+  navToggle.addEventListener("click", function() {
+    if (navMain.classList.contains("main-nav--closed")) {
+      navMain.classList.remove("main-nav--closed");
+      navMain.classList.add("main-nav--opened");
     } else {
-      navMain.classList.add('main-nav--closed');
-      navMain.classList.remove('main-nav--opened');
+      navMain.classList.add("main-nav--closed");
+      navMain.classList.remove("main-nav--opened");
     }
   });
