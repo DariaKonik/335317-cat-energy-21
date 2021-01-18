@@ -64,7 +64,7 @@
 }
 
 .program-form__list--filter .program-form__option {
-  margin-bottom: 25px;
+  margin-bottom: 24px;
 }
 
 .program-form__option:last-child {
@@ -153,6 +153,13 @@
     margin-right: 15px;
   }
 }
+
+.program-form__label--email,
+.program-form__label--phone {
+  margin-bottom: 10px;
+}
+
+
 
 .program-form__input-radio + label {
   padding-left: 45px;
@@ -263,7 +270,7 @@
   position: absolute;
   z-index: 2;
   top: 50%;
-  right: 17px;
+  right: 14px;
   transform: translateY(-50%);
 }
 
@@ -324,7 +331,7 @@
   }
 }
 
-.program-form__h3 {
+.program-form__required-field {
   @media (max-width: $tablet-width - 1) {
     margin-top: 20px;
     margin-bottom: 31px;
@@ -332,10 +339,10 @@
 
   @media (min-width: $tablet-width) {
     margin-top: 12px;
-    margin-left: 63px;
+    margin-left: 62px;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     margin-left: 82px;
   }
 }
