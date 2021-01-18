@@ -13,9 +13,8 @@
   }
 
   @media (min-width: $tablet-width) {
+    display: flex;
     padding: $tablet-min-padding;
-    grid-gap: 40px;
-    grid-template-columns: auto auto;
   }
 
   @media (min-width: $desktop-width) {
