@@ -19,7 +19,7 @@
         </picture>
       </a>
       <nav class="page-header__nav main-nav main-nav--closed main-nav--nojs">
-        <button class="button main-nav__toggle" type="button">
+        <button class="button main-nav__toggle" type="button" aria-label="Отразить навигацию по разделам сайта">
         </button>
         <ul class="main-nav__list">
           <li class="main-nav__item main-nav__item--active">
@@ -52,7 +52,7 @@
               <img class="promo__image" src="img/food-promo-mobile.png" srcset="img/food-promo-mobile@2x.png 2x" alt="Пластиковый стаканчик с питанием Cat Energy запаяный фольгированой крышкой с фирменным логотипом на ней. Объем порции 500 грамм">
             </picture>
           </div>
-          <a class="button button--standart-button button--promo" href="form.html">Подобрать программу</a>
+          <a class="button button--standart-button button--promo" aria-label="Перейти на страницу подбора индивидуальной программы" href="form.html">Подобрать программу</a>
         </div>
       </section>
       <section class="goods">
@@ -121,11 +121,11 @@
               <img class="results__image results__image--fat-cat" src="img/before-mobile.png" srcset="img/before-mobile@2x.png 2x" alt="Толстый кот до замены корма на Cat Energy Slim">
               </picture>
             <div class="results__toggle-panel toggle-panel">
-              <span class="toggle-panel__label">Было</span>
+              <span class="toggle-panel__label" tabindex="1" aria-label="Посмотреть изображение питомца до замены корма на Cat Energy Slim">Было</span>
               <div class="toggle-panel__toggle">
-                <div class="toggle-panel__tumbler" tabindex = "1"></div>
+                <div class="toggle-panel__tumbler" tabindex="1 aria-hidden="true"></div>
               </div>
-              <span class="toggle-panel__label">Стало</span>
+              <span class="toggle-panel__label" tabindex="1" aria-label="Посмотреть изображение питомца после замены корма на Cat Energy Slim">Стало</span>
             </div>
           </div>
         </div>
@@ -139,21 +139,21 @@
           <p class="contacts__text">ул. Большая Конюшенная, д. 19/8 <span class="contacts__city">Санкт-Петербург</span></p>
         </div>
         <iframe class="page-footer__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1607613302416!5m2!1sru!2sru" width="320" height="362" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-        <noscript class="page-footer__map--nojs">
+        <noscript>
           <picture>
             <source type="image/webp" media="(min-width: 1440px)" srcset="img/map-image-desktop.webp 1x, img/map-image-desktop@2x.webp 2x">
             <source type="image/webp" media="(min-width: 768px)" srcset="img/map-image-tablet.webp 1x, img/map-image-tablet@2x.webp 2x">
             <source type="image/webp" srcset="img/map-image.webp 1x, img/map-image@2x.webp 2x">
             <source media="(min-width: 1440px)" srcset="img/map-image-desktop.png 1x, img/map-image-desktop@2x.png 2x">
             <source media="(min-width: 768px)" srcset="img/map-image-tablet.png 1x, img/map-image-tablet@2x.png 2x">
-            <img class="page-footer__map" src="img/map-image.png" srcset="img/map-image@2x.png 2x" alt="Офис компании, улица Большая Конюшенная, д. 19/8, Санкт-Петербург">
+            <img class="page-footer__map page-footer__map--nojs" src="img/map-image.png" srcset="img/map-image@2x.png 2x" alt="Офис компании, улица Большая Конюшенная, д. 19/8, Санкт-Петербург">
           </picture>
         </noscript>
       </section>
       <section class="page-footer__bottom-section">
       <h2 class="visually-hidden">Страницы Cat Energy в Интернете</h2>
-        <a class="page-footer__logo-wrapper">
-          <img class="page-footer__logo-text" src="img/footer-logo.svg" width="128" height="24" alt="Cat Energy">
+        <a class="page-footer__logo-wrapper" aria-hidden="true" >
+          <img class="page-footer__logo-text" src="img/footer-logo.svg" width="128" height="24" alt="логотип питания Cat Energy">
         </a>
         <div class="page-footer__social">
           <ul class="social">

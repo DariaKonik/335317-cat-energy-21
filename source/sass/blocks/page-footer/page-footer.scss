@@ -93,3 +93,18 @@
 iframe.page-footer__map {
   display: none;
 }
+
+.page-footer__map--nojs {
+  width: 320px;
+  height: 362px;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+    height: 400px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1440px;
+    height: 400px;
+  }
+}
