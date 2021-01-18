@@ -1,6 +1,6 @@
   var navMain = document.querySelector(".main-nav");
   var navToggle = document.querySelector(".main-nav__toggle");
-  const mapOffice = document.querySelector("iframe.contacts__map");
+  var mapOffice = document.querySelector("iframe.page-footer__map");
 
   mapOffice.style.display = "block";
 
