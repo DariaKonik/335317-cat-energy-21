@@ -33,10 +33,6 @@
   }
 }
 
-iframe.page-footer__map {
-  border: 0;
-}
-
 .page-footer__logo-wrapper {
   cursor: pointer;
 
@@ -96,6 +92,7 @@ iframe.page-footer__map {
 
 iframe.page-footer__map {
   display: none;
+  border: 0;
 }
 
 .page-footer__map--nojs {
