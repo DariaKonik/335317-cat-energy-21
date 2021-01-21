@@ -40,7 +40,7 @@
 .product--extra {
   display: grid;
   grid-template-columns: 1fr;
-  padding: 13px 0 17px 0;
+  padding: 12px 0 17px 0;
   width: auto;
   background: $basic-white;
   box-sizing: border-box;
@@ -171,7 +171,7 @@
 }
 
 .product__title--extra {
-  margin-bottom: 10px;
+  margin-bottom: 14px;
   line-height: 16px;
 
   @media (min-width: $tablet-width) {
