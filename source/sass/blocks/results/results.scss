@@ -1,32 +1,32 @@
 .results {
-  padding: 0 20px 0 20px;
-  padding-top: 27px;
-  padding-bottom: 26px;
   background-color: $results-background;
 
   @media (min-width: $tablet-width) {
-    padding: $tablet-min-padding;
-    padding-bottom: 75px;
     background: linear-gradient(to bottom, $basic-white 55%, $results-background 55%);
   }
 
   @media (min-width: $desktop-width) {
-    padding: $desktop-min-padding-double;
-    padding-bottom: 63px;
     background: linear-gradient(to bottom, $basic-white 30%, $results-background 30%);
   }
 }
 
 .results__wrapper {
+  padding: 27px 20px 26px 20px;
+
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
+    padding: $tablet-min-padding;
+    padding-bottom: 58px;
   }
 
   @media (min-width: $desktop-width) {
+    padding: $desktop-min-padding-double;
+    padding-bottom: 63px;
     display: grid;
     grid-template-columns: 436px 1fr;
     grid-column-gap: 134px;
+    box-sizing: border-box;
   }
 }
 
@@ -140,7 +140,7 @@
 
 .results__legend {
   margin-top: 35px;
-  margin-bottom: 40px;
+  margin-bottom: 42px;
   font-size: 14px;
   line-height: 20px;
   font-family: "Oswald", "Arial", sans-serif;

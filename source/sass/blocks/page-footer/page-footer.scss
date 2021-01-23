@@ -7,22 +7,28 @@
 }
 
 .page-footer__bottom-section {
+  background-color: $frames-background;
+}
+
+.page-footer__bottom-section-wrapper {
   display: flex;
   flex-direction: column;
   padding: 0 19px 0 19px;
-  background-color: $frames-background;
+
 
   @media (min-width: $tablet-width) {
-    padding: 55px 30px 61px 30px;
     display: grid;
     grid-template-columns: 1fr 140px 1fr;
     align-items: start;
+    padding: 55px 30px 61px 30px;
   }
 
   @media (min-width: $desktop-width) {
     padding: 59px  110px 58px  110px;
+    box-sizing: border-box;
   }
 }
+
 
 .page-footer__map {
   display: block;
@@ -108,4 +114,8 @@ iframe.page-footer__map {
     width: 1440px;
     height: 400px;
   }
+}
+
+.page-footer__top-section-wrapper {
+  position: relative;
 }

@@ -1,15 +1,18 @@
 .page-header {
   position: relative;
-  padding: 0 20px 0 21px;
+}
+
+.page-header__wrapper {
   display: grid;
   grid-template-columns: 1fr 101px 1fr;
   justify-content: space-between;
   align-items: center;
+  padding: $min-page-padding;
   background-color: transparent;
   box-sizing: border-box;
 
   @media (max-width: $mobile-width-only) {
-    grid-template-rows: 65px auto;
+    grid-template-rows: 66px auto;
   }
 
   @media (min-width: $tablet-width) {
@@ -57,10 +60,10 @@
       right: 0;
       width: 50vw;
       height: 694px;
-      background: linear-gradient(90deg, $background-green 50%, $background-green 50%), url("../img/index-background-desktop-1.jpg");
+      background: linear-gradient(90deg, $background-green 50vw, $background-green 50vw), url("../img/index-background-desktop-1.jpg");
       background-repeat: no-repeat, no-repeat;
       background-size: cover;
-      background-position: 0 0;
+      background-position: 50% 50%;
     }
   }
 

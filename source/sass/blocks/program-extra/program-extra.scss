@@ -1,12 +1,12 @@
 .program-extra {
-  margin: 0 0 40px 0;
+  margin-bottom: 40px;
 
   @media (min-width: $tablet-width) {
-    margin: 0 0 17px 0;
+     margin-bottom: 17px;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 0 65px 0;
+     margin-bottom: 65px;
   }
 }
 

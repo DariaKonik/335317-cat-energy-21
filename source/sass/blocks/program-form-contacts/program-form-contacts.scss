@@ -1,12 +1,12 @@
 .program-form-contacts {
-  margin: 0 0 23px 0;
+  margin-bottom: 23px;
 
   @media (min-width: $tablet-width) {
-    margin: 0 0 64px 0;
+    margin-bottom: 64px;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 0 67px 0;
+    margin-bottom: 67px;
   }
 }
 

@@ -1,14 +1,14 @@
 .program-form-comment {
-  margin: 0 0 23px 0;
+  margin-bottom: 23px;
   padding: $min-page-padding;
 
   @media (min-width: $tablet-width) {
-    margin: 0 0 60px 0;
+    margin-bottom: 60px;
     padding: 0 70px 0 69px;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 0 61px 0;
+    margin-bottom: 61px;
     padding: $desktop-min-padding-double;
   }
 }
