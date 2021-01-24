@@ -16,7 +16,7 @@
   @include list-style-blocks;
   display: flex;
   flex-direction: column;
-  padding: $min-page-padding;
+  padding: 0 20px 0 18px;
 
   @media (min-width: $tablet-width) {
     padding: 0;
@@ -36,8 +36,14 @@
   }
 }
 
+.program-form__list--program-name .program-form__label {
+  @media (max-width: $mobile-width-only) {
+    margin-right: 15px;
+  }
+}
+
 .program-form__list--filter {
-  padding: 29px 20px 24px 21px;
+  padding: 29px 20px 24px 19px;
   border-top: 1px solid $simple-line-color;
   border-bottom: 1px solid $simple-line-color;
   box-sizing: border-box;
@@ -135,7 +141,7 @@
 .program-form__input--comment {
   min-height: 150px;
   width: 100%;
-  padding: 10px 12px 10px 13px;
+  padding: 10px 12px 10px 10px;
   resize: vertical;
 
   @media (min-width: $tablet-width) {
@@ -156,7 +162,9 @@
 
 .program-form__label--email,
 .program-form__label--phone {
-  margin-bottom: 10px;
+  @media (max-width: $mobile-width-only) {
+    margin-bottom: 10px;
+  }
 }
 
 .program-form__input-radio + label {
@@ -342,6 +350,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    margin-top: 14px;
     margin-left: 82px;
   }
 }

@@ -1,5 +1,5 @@
 .program-form-comment {
-  margin-bottom: 23px;
+  margin-bottom: 20px;
   padding: $min-page-padding;
 
   @media (min-width: $tablet-width) {
@@ -8,7 +8,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 61px;
     padding: $desktop-min-padding-double;
   }
 }
