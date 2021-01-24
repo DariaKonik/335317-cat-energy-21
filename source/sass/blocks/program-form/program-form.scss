@@ -197,8 +197,8 @@
   }
 }
 
-.program-form__input-radio + label:hover::before,
-.program-form__input-radio + label:focus::before {
+.program-form__input-radio:hover + label::before,
+.program-form__input-radio:focus + label::before {
   border-color: $radio-focus;
 }
 
@@ -250,8 +250,8 @@
   background: url("../img/tick.svg") no-repeat 50% 50%;
 }
 
-.program-form__input-checkbox + label:hover::before,
-.program-form__input-checkbox + label:focus::before {
+.program-form__input-checkbox:hover + label::before,
+.program-form__input-checkbox:focus + label::before {
   border-color: $radio-focus;
 }
 
